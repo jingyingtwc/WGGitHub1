@@ -18,7 +18,7 @@
                 <p  style="color:#3FC367"> and have various backgrounds and skills. </p>
                 <p/>
                 <p style="color:#3FC367">If you have any ideas or suggestion, please feel free and contact us anytime. </p>
-                <p style="color:#3FC367">Our email address is klu19@student.moansh.edu</p>
+                <p style="color:#3FC367">Our email address is klu19@student.moansh.edu  </p>
 		        </section>
             </div>
         
