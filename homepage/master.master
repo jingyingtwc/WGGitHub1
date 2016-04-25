@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>WASTEGURU from Team ASYST</title>
+
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+ <form id="form1" method="post" runat="server">
+
+     			<!-- Header -->
+				<div id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<span class="pennant"><span class="icon fa-futbol-o"></span></span>
+								<h1><a href="index.aspx">WasteGuru</a></h1>
+							</div>
+
+						<!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                
+                                <li><a href="aboutus.aspx">About Us</a></li>
+                                <li><a href="reg.aspx">Register</a></li>
+                                <li><a href="disposal.aspx">Disposal Sites</a></li>
+                                <%--<li><a href="funfact.aspx">Fun Facts</a></li>--%>
+                                <li><a href="gameinst.aspx">Game</a></li>
+                                <li><a href="index.aspx">Home</a></li>
+                                <%--									<li>//This is a drop down menu
+										<a href="#" class="icon fa-caret-down">Drop Down Menu</a>
+										<ul>
+											<li><a href="#">Example Menu</a></li>
+											<li><a href="#">Example Menu</a></li>
+											<li><a href="#">Example Menu</a></li>
+											<li><a href="#">Example Menu</a></li>
+											<li>
+												<a href="#">Example Submenu</a>
+												<ul>
+													<li><a href="#">Example Submenu</a></li>
+													<li><a href="#">Example Submenu</a></li>
+													<li><a href="#">Example Submenu</a></li>
+													<li><a href="#">Example Submenu</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>--%>
+                            </ul>
+                        </nav>
+
+					</div>
+				</div>
+
+     <asp:ContentPlaceHolder runat="server" ID="Content" />
+
+     			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<section>
+							<%--<div class="row">
+								<div class="3u 12u(mobile)">
+									<header>
+										<h2>description1</h2>
+									</header>
+									<p>111</p>
+									<a href="#" class="button">More</a>
+								</div>
+								<div class="3u 12u(mobile)">
+									<header>
+										<h2>description2</h2>
+									</header>
+									<p>222</p>
+									<a href="#" class="button">More</a>								
+								</div>
+								<div class="3u 12u(mobile)">
+									<header>
+										<h2>description3</h2>
+									</header>
+									<p>333</p>
+									<a href="#" class="button">More</a>								
+								</div>
+								<div class="3u 12u(mobile)">
+									<header>
+										<h2>description4</h2>
+									</header>
+									<p>444</p>
+									<a href="#" class="button">More</a>								
+								</div>								
+							</div>		--%>						
+						</section>
+
+						<!-- Social -->
+							<section>
+								<ul class="icons">
+									<li><a href="https://twitter.com/intent/tweet?text=Im%20playing%20Waste%20Guru.%20It%20is%20interesting%20and%20helpful.%20Come%20to%20play%20with%20me." class="icon fa-twitter"><span>Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span>Facebook</span></a></li>
+									<li><a href="#" class="icon fa-google-plus"><span>Google+</span></a></li>
+									<li><a href="#" class="icon fa-linkedin"><span>Linkedin</span></a></li>
+									<li><a href="#" class="icon fa-pinterest"><span>Pinterest</span></a></li>
+								</ul>
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">
+								Copyright &copy; 2016.ASYST All rights reserved.								
+							</div>
+
+					</div>
+				</div>
+
+		
+
+
+
+ </form>
+
+
+        
+
+ 
+</body>
+</html>
