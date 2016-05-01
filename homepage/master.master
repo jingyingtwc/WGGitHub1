@@ -18,62 +18,58 @@
     <!-- body area end-->
 
     <!-- lower sitemap area -->
-    <div style="width:900px">
+    <div style="width: 900px">
         <div>
+            <table>
+                <tr>
+                    <td>
+                    <div class="3u 12u(mobile)">
+                        <header>
+                            <h2><a href="index.aspx" class="button">HOMEPAGE</a></h2>
+                        </header>
+                        <p style="color:white">Go back to homepage</p>
+                        
+                    </div></td>
+                    <td>
+                    <div class="3u 12u(mobile)">
+                        <header>
+                            <h2><a href="game.aspx" class="button">GAME</a></h2>
+                        </header>
+                        <p style="color:white">Start the Game!</p>
+                        
+                    </div></td>
+                    <td>
+                    <div class="3u 12u(mobile)">
+                        <header>
+                            <h2><a href="disposal.aspx" class="button">Disposal Sites</a></h2>
+                        </header>
+                        <p style="color:white">Check disposal sites around you</p>
+                        
+                    </div></td>
+                    <td>
+                    <div class="3u 12u(mobile)">
+                        <header>
+                            <h2><a href="#" class="button">Fun Facts</a></h2>
+                        </header>
+                        <p style="color:white">Get to know some fun facts</p>
+                        
+                    </div></td>
+                    <td>
+                    <div class="3u 12u(mobile)">
+                        <header>
+                            <h2><a href="aboutus.aspx" class="button">About us</a></h2>
+                        </header>
+                        <p style="color:white">About us, about Team ASYST</p>
+                        
+                    </div></td>
 
-            </div>
 
 
-        <div id="footer">
-            <div class="container">
-                <section>
-                    <div class="row">
-                        <div class="3u 12u(mobile)">
-                            <header>
-                                <h2>Homepage</h2>
-                            </header>
-                            <p>Go back to homepage</p>
-                            <a href="#" class="button">More</a>
-                        </div>
-                        <div class="3u 12u(mobile)">
-                            <header>
-                                <h2>Game</h2>
-                            </header>
-                            <p>Start WasteGuru Game</p>
-                            <a href="#" class="button">More</a>
-                        </div>
-                        <div class="3u 12u(mobile)">
-                            <header>
-                                <h2>Collection Date</h2>
-                            </header>
-                            <p>Check collection date for your area</p>
-                            <a href="#" class="button">More</a>
-                        </div>
-                        <div class="3u 12u(mobile)">
-                            <header>
-                                <h2>Disposal Sites</h2>
-                            </header>
-                            <p>Find disposal sites in your area</p>
-                            <a href="#" class="button">More</a>
-                        </div>
-                        <div class="3u 12u(mobile)">
-                            <header>
-                                <h2>Fun Facts</h2>
-                            </header>
-                            <p>Check for some fun facts</p>
-                            <a href="#" class="button">More</a>
-                        </div>
-                        <div class="3u 12u(mobile)">
-                            <header>
-                                <h2>About Us</h2>
-                            </header>
-                            <p>About us, about Team ASYST</p>
-                            <a href="#" class="button">More</a>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                    </tr>
+       </table>
         </div>
+
+        
     </div>
     <!-- lower navigation area end -->
 
