@@ -6,32 +6,24 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <%--<body>--%>
     <!-- Main -->
-    <div align="center">
-        <%--<!----------------------以下代碼用來顯示flash------------------------->
-        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="640" height="576">
-            <param name="movie" value="Dungeons.swf"/>
-            <!---- 上value值填入flash的地址，你的flash在本機上就用相對地址!---->
-            <param name="quality" value="high"/>
-            <param name="SCALE" value="exactfit"/>
-            <!---- 下src值填入和剛才一樣的地址!---->
-            <embed src="Dungeons.swf" width="640" height="576" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" scale="exactfit"/>
-        </object>
-        <!----------------------顯示flash代碼結束------------------------>--%>
-        <object type="application/x-shockwave-flash" data="Dungeons.swf" width="640" height="576" id="vcastr3" bgColor="#000000">
-        <param name="movie" value="Dungeons.swf"/>
-        <param name="allowFullScreen" value="true" />
-        <param name="FlashVars" value="xml=vcastr.xml" />
-        <param name="bgColor" value="#000000" />
-        <param name="quality" value="high" />
-        <param name="scale" value="showall" />
-</object>
+    <div style=" text-align:center; background-color: white">
+        <div style="display:inline-block">
+            <object type="application/x-shockwave-flash" data="Dungeons.swf" width="640" height="576" id="vcastr3" bgcolor="#000000">
+                <param name="movie" value="Dungeons.swf" />
+                <param name="allowFullScreen" value="true" />
+                <param name="FlashVars" value="xml=vcastr.xml" />
+                <param name="bgColor" value="#000000" />
+                <param name="quality" value="high" />
+                <param name="scale" value="showall" />
+            </object>
+        </div>
     </div>
     <!-- Featured -->
     <div id="featured">
         <section class="container">
             <header>
                 <h2>Waste Guru</h2>
-                <span class="byline">Hi mate. This is WasteGuru provided to you by Team ASYST.</span>
+                <span class="byline">Hi kid. This is WasteGuru provided to you by Team ASYST.</span>
             </header>
         </section>
     </div>

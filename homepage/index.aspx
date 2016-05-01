@@ -3,44 +3,24 @@
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <%--<body>--%>
+    <!-- middle image -->
+    <div style="width: 1904px; height: 1050px">
+        <div style="width: 1904px; height: 1050px; margin-left: auto; margin-right: auto; z-index: 0;background-image:url('images/bg.png')">
+            
+        </div>
 
-    <!-- Banner -->
-				<div id="banner">
-					<div class="container">						
-						<div class="row">
-							<div class="9u 12u(mobile)">
-								<section>
-									<a class="image full"><img src="images/33.png" alt="logo-large" height="500" width="10000" /></a>
-								</section>
-							</div>
-							<div class="3u 12u(mobile)">
-								<section>
-									<div style="height:500px" class="bannerbox">
-										<h2>WasteGuru Game!</h2>
-										<p>This s the instruction of the game.</p>
-                                        <p><a class="image full" href="gameinst.aspx"><img src="images/start.png" alt="Start Game" /></a></p>
-									</div>
-								</section>
-							</div>							
-						</div>
-					</div>
-				</div>
+        <!-- top left -->
+        <div style="width: 400px; height: 430px; position: absolute; left: 0px; top: 0px; z-index: 1" onclick="location.href='game.aspx';" >   </div>
 
-			
-				
-			
+        <!-- top right -->
+        <div style="width: 377px; height: 497px; position: absolute; right: 0px; top: 0px; z-index: 1" onclick="location.href='collection.aspx';" >   </div>
 
+        <!-- bottom left -->
+        <div style="width: 384px; height: 334px; position: absolute; left: 0px; bottom: 0px; z-index: 1" onclick="location.href='disposal.aspx';" >   </div>
 
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	<%--</body>--%>
-    
+        <!-- bottom right -->
+        <div style="width: 360px; height: 263px; position: absolute; right: 0px; bottom: 0px; z-index: 1" onclick="location.href='funfact.aspx';" >   </div>
+    </div>
 </asp:Content>
