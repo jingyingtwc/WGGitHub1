@@ -61,6 +61,7 @@
     <Content Include="game.aspx" />
     <Content Include="gameinst.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="info.aspx" />
     <Content Include="login.aspx" />
     <Content Include="reg.aspx" />
     <Content Include="Scripts\assets\css\font-awesome.min.css" />
@@ -89,6 +90,13 @@
     <Content Include="search.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="info.aspx.cs">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="info.aspx.designer.cs">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
