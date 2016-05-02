@@ -11,11 +11,11 @@
             
         </div>
 
-        <!-- top left -->
+        <!-- top left / game-->
         <div style="width: 400px; height: 430px; position: absolute; left: 0px; top: 0px; z-index: 1" onclick="location.href='game.aspx';" >   </div>
 
-        <!-- top right -->
-        <div style="width: 377px; height: 497px; position: absolute; right: 0px; top: 0px; z-index: 1" onclick="location.href='#';" >   </div>
+        <!-- top right / collection date-->
+        <div style="width: 377px; height: 497px; position: absolute; right: 0px; top: 0px; z-index: 1" onclick="location.href='search.aspx';" >   </div>
 
         <!-- bottom left -->
         <div style="width: 384px; height: 334px; position: absolute; left: 0px; bottom: 0px; z-index: 1" onclick="location.href='disposal.aspx';" >   </div>

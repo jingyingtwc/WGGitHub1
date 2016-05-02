@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
+﻿    112·1q!
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
 
 <!DOCTYPE html>
 
@@ -33,11 +34,22 @@
                     <td>
                     <div class="3u 12u(mobile)">
                         <header>
-                            <h2><a href="game.aspx" class="button">GAME</a></h2>
+                            <h2><a href="game.aspx" class="button">Game</a></h2>
                         </header>
                         <p style="color:white">Start the Game!</p>
                         
                     </div></td>
+
+                    <td>
+                    <div class="3u 12u(mobile)">
+                        <header>
+                            <h2><a href="search.aspx" class="button">Collection Date</a></h2>
+                        </header>
+                        <p style="color:white">Find your collection date </p>
+                        
+                    </div></td>
+                    <td>
+
                     <td>
                     <div class="3u 12u(mobile)">
                         <header>
@@ -47,6 +59,7 @@
                         
                     </div></td>
                     <td>
+
                     <div class="3u 12u(mobile)">
                         <header>
                             <h2><a href="#" class="button">Fun Facts</a></h2>
