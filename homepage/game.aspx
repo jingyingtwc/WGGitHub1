@@ -3,7 +3,6 @@
 <%@ Import Namespace="System.IO" %>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <link rel="stylesheet" href="assets/css/main.css" />
     <%--<body>--%>
     <!-- Main -->
     <div style=" text-align:center; background-color: white">
@@ -27,17 +26,5 @@
             </header>
         </section>
     </div>
-
-
-
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
-
-    <%--</body>--%>
+        
 </asp:Content>

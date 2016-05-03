@@ -3,40 +3,41 @@
 <%@ Import Namespace="System.IO" %>
 <script language="c#" runat="server">
 
-  private void find(object sender, EventArgs e)
-  {
+    private void find(object sender, EventArgs e)
+    {
 
-      disposal.SelectCommand = "SELECT * FROM collection WHERE Postcode LIKE '%" + TextBox1.Text.Trim(' ') + "%'";
+        disposal.SelectCommand = "SELECT * FROM collection WHERE Postcode LIKE '%" + TextBox1.Text.Trim(' ') + "%'";
 
 
 
-      gvProducts.DataSource = disposal;
-      gvProducts.DataBind();
-  }
+        gvProducts.DataSource = disposal;
+        gvProducts.DataBind();
+    }
 
 </script>
 
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!DOCTYPE html>
 
-      <asp:accessdatasource runat="server"
-    DataFile="disposal.mdb" 
-    id="disposal">
-  </asp:accessdatasource>
+    <asp:AccessDataSource runat="server"
+        DataFile="disposal.mdb"
+        ID="disposal"></asp:AccessDataSource>
 
 
 
 
     <!-- body area -->
-    <div style="width: 1904px; height: 1055px; text-align: center; background-color: white;position:absolute;left:0px;top:0px">
-        <p>　</p>
-        <p>　</p>
+    <div style=" text-align:center; background-color: white">
+<%--    <div style="width: 1904px; height: 1055px; text-align: center; background-color: white; position: absolute; left: 0px; top: 0px">--%>
+        <p></p>
+        <p></p>
 
         <p style="font-size: xx-large">Hi kid!</p>
-        <asp:Label ID="label1" runat="server" Font-Size="XX-Large">Enter your postcode and find the rubbish pick up date!</asp:Label>
+        <asp:Label ID="label1" runat="server" Font-Size="XX-Large">Enter your postcode and find the rubbish pick up date!</asp:Label><br />
+        <asp:Label ID="label4" runat="server" Font-Size="XX-Large">And don't forget to remind your mom before that day!</asp:Label>
 
         <!--  sth wrong with the table. connot be aligned center -->
-        <div style="margin:auto">
+        <div style="margin: auto">
             <table style="width: 900px; align-content: center; font-size: x-large" align="center">
                 <tr>
                     <td>
@@ -52,9 +53,9 @@
 
         <!-- result area -->
         <!-- data table -->
-        <div id="disposalsitescontent" style="text-align: center; background-color: white; width: 800px;margin:auto">
-            
-           
+        <div id="disposalsitescontent" style="text-align: center; background-color: white; width: 800px; margin: auto">
+
+
             <asp:GridView ID="gvProducts" runat="server"
                 AllowPaging="false"
                 AllowSorting="false"
@@ -72,7 +73,7 @@
                         SortExpression="Postcode" />
                     <asp:BoundField DataField="Date" HeaderText="Collection date:"
                         SortExpression="Date" />
-                    
+
                 </Columns>
 
             </asp:GridView>
@@ -84,34 +85,36 @@
 
 
         <!-- lowerpart buttons -->
-        <table>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td><a href="index.aspx">
-                                <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
-                                <asp:Label ID="Label2" runat="server" Text="Back"></asp:Label>
-                            </a></td>
-                        </tr>
-                    </table>
-                </td>
+        <div style="text-align: center; align-content: center;margin:auto;width:800px">
 
-                <td>
-                    <asp:Image ID="Image3" runat="server" ImageUrl="images/bin.png" />
-                </td>
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><a href="index.aspx">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
+                                    <asp:Label ID="Label2" runat="server" Text="Back"></asp:Label>
+                                </a></td>
+                            </tr>
+                        </table>
+                    </td>
 
-                <td>
-                    <table>
-                        <tr>
-                            <asp:Label ID="Label3" runat="server" Text="Search"></asp:Label>
-                            <asp:Image ID="Image2" runat="server" ImageUrl="images/search.png" />
-                        </tr>
-                    </table>
+                    <td>
+                        <asp:Image ID="Image3" runat="server" ImageUrl="images/bin.png" />
+                    </td>
 
-                </td>
-            </tr>
-        </table>
+                    <td>
+                        <table>
+                            <tr>
+                                <asp:Label ID="Label3" runat="server" Text="Search"></asp:Label>
+                                <asp:Image ID="Image2" runat="server" ImageUrl="images/search.png" />
+                            </tr>
+                        </table>
 
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </asp:Content>

@@ -21,49 +21,84 @@
             formatLabel.Text = "Please enter a valid postcode.";
         }
 
-        int mplus = m + 10;
-        int mminus = m - 10;
+        int mplus = m + 5;
+        int mminus = m - 5;
 
 
 
         switch (type.SelectedValue)
         {
             case "battery":
-                dsAccess.SelectCommand = "select * from chemical where postcode > " + mminus + " and postcode <" + mplus + ";";
+                dsAccess.SelectCommand = "select * from battery where postcode > " + mminus + " and postcode <" + mplus + ";";
+                infoimage.ImageUrl = "images/battery.png";
+                fflabel.Text = "Know more about the battery recycling!";
+                fflink.NavigateUrl = "batteryff.aspx";
                 break;
             case "can":
                 dsAccess.SelectCommand = "select * from can where postcode > " + mminus + " and postcode <" + mplus + ";";
+                infoimage.ImageUrl = "images/can.png";
+                fflabel.Text = "Know more about the can recycling!";
+                fflink.NavigateUrl = "canff.aspx";
                 break;
             case "chemical":
                 dsAccess.SelectCommand = "select * from chemical where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+                infoimage.ImageUrl = "images/paint.png";
+                fflabel.Text = "Know more about the chemical&paint recycling!";
+                fflink.NavigateUrl = "chemicalff.aspx";
                 break;
             case "clothing":
                 dsAccess.SelectCommand = "select * from clothing where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+                infoimage.ImageUrl = "images/clothe.png";
+                fflabel.Text = "Know more about the clothing recycling!";
+                fflink.NavigateUrl = "clothingff.aspx";
                 break;
             case "computer":
                 dsAccess.SelectCommand = "select * from computer where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+                infoimage.ImageUrl = "images/computer.png";
+                fflabel.Text = "Know more about the computer recycling!";
+                fflink.NavigateUrl = "computerff.aspx";
                 break;
             case "mobilephone":
                 dsAccess.SelectCommand = "select * from mobilephone where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+                infoimage.ImageUrl = "images/mobilephone.png";
+                fflabel.Text = "Know more about the mobilephone recycling!";
+                fflink.NavigateUrl = "phoneff.aspx";
                 break;
             case "TV":
                 dsAccess.SelectCommand = "select * from tv where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+                infoimage.ImageUrl = "images/tv.png";
+                fflabel.Text = "Know more about the tv recycling!";
+                fflink.NavigateUrl = "tvff.aspx";
                 break;
             case "whitegood":
                 dsAccess.SelectCommand = "select * from whitegood where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+                infoimage.ImageUrl = "images/whitegood.png";
+                fflabel.Text = "Know more about the whitegood recycling!";
+                fflink.NavigateUrl = "whitegoodff.aspx";
                 break;
             default:
                 break;
         }
 
-            datagv.DataSource = dsAccess;
-            datagv.DataBind();
+        datagv.DataSource = dsAccess;
+        datagv.DataBind();
 
 
 
 
 
 
+
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
 
     }
 </script>
@@ -74,33 +109,34 @@
     <asp:AccessDataSource runat="server" ID="dsAccess"
         DataFile="disposal.mdb" />
 
+        <div style=" text-align:center; background-color: white">
 
-    <div style="width: 1904px; height: 1055px; background-color: white; text-align: center; position: absolute; top: 0px;">
+<%--    <div style="width: 100%; background-color: white; text-align: center; position: absolute; top: 0px;">--%>
 
         <!-- header -->
-        <div style="align-content: center; font-size: xx-large">
+        <div style="align-content: center; font-size: x-large">
             <p></p>
             <p></p>
 
-            <p>Hi kid! </p>
-            <p>Find out your nearest disposal sites here!</p>
+            <p style="color: blueviolet; font-size: 3em;">Hi kid! </p>
+            <p style="color: blueviolet; font-size: 3em;">Find out your nearest disposal sites here!</p>
         </div>
 
 
         <!-- textbox area -->
-        <div style="height: 200px; width: 800px; margin: auto; text-align: center">
+        <div style="width: 800px; margin: auto; text-align: center">
             <table>
                 <tr>
                     <td>
-                        <div style="height: 200px; width: 200px; text-align: right; vertical-align: middle">
-                            <asp:Label runat="server" Text="Enter your postcode" />
+                        <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
+                            <asp:Label runat="server" Text="Enter your postcode and select what kind of waste you want to dispose!" Font-Size="Large" ForeColor="#6600FF" />
                         </div>
                     </td>
                     <td>
-                        <div style="width: 400px; text-align: right; vertical-align: middle">
-                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
-                            <asp:RadioButtonList ID="type" runat="server">
-                                <asp:ListItem id="chemical" runat="server" Value="chemical" />
+                        <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
+                            <asp:TextBox ID="TextBox1" runat="server" Font-Size="Large"></asp:TextBox>
+                            <asp:DropDownList ID="type" runat="server" Font-Size="Large">
+                                <asp:ListItem id="chemical" runat="server" Selected="True" Value="chemical" />
                                 <asp:ListItem id="battery" runat="server" Value="battery" />
                                 <asp:ListItem id="clothing" runat="server" Value="clothing" />
                                 <asp:ListItem id="computer" runat="server" Value="computer" />
@@ -108,12 +144,11 @@
                                 <asp:ListItem id="TV" runat="server" Value="TV" />
                                 <asp:ListItem id="whitegood" runat="server" Value="whitegood" />
                                 <asp:ListItem id="can" runat="server" Value="can" />
-
-                            </asp:RadioButtonList>
+                            </asp:DropDownList>
                         </div>
                     </td>
                     <td>
-                        <div style="height: 200px; width: 200px; text-align: right; vertical-align: middle">
+                        <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
                             <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" />
                         </div>
                     </td>
@@ -152,48 +187,46 @@
 
 
         <!-- lower part buttons -->
-        <table style="align-content: flex-end; width: 800px; height: 300px;">
-            <tr>
-                <td style="width: 200px; height: 300px">
-                    <table>
-                        <tr>
-                            <td><a href="index.aspx">
-                                <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
-                                <asp:Label ID="Label2" runat="server" Text="Back"></asp:Label>
-                            </a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="search.aspx">
-                                <asp:Image ID="Image4" runat="server" ImageUrl="images/search.png" />
-                                <asp:Label ID="Label1" runat="server" Text="Search"></asp:Label>
-                            </a></td>
-                        </tr>
-                    </table>
-                </td>
-
-                <td style="text-align: center; width: 400px; height: 300px;">
-                    <asp:Image ID="Image3" runat="server" ImageUrl="images/battery.png" />
-                </td>
-
-                <td style="width: 200px; height: 300px">
-                    <table style="text-align: right">
-                        <tr>
-                            <td>
-                                <a href="info.aspx">
-                                    <asp:Label runat="server" Text="Know more about the battery recycling!" />
+        <div style="text-align: center; align-content: center; ">
+            <table style="width: 800px; height: 300px; display: inline-block;">
+                <tr>
+                    <td style="width: 200px; height: 300px">
+                        <table>
+                            <tr>
+                                <td><a href="index.aspx">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
+                                    <asp:Label ID="Label2" runat="server" Text="Back"></asp:Label>
                                 </a></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <asp:Image runat="server" ImageUrl="images/lion.png" />
-                            </td>
-                        </tr>
-                    </table>
+                            </tr>
 
-                </td>
-            </tr>
-        </table>
+                        </table>
+                    </td>
 
+                    <td style="text-align: center; width: 400px; height: 200px;">
+                        <asp:Image ID="infoimage" runat="server" ImageUrl="images/lol.png" />
+                    </td>
+
+                    <td style="width: 200px; height: 300px">
+                        <table style="text-align: right">
+                            <tr>
+                                <td>
+                                    <asp:HyperLink ID="fflink" runat="server" NavigateUrl="~/clothingff.aspx">
+                                        <asp:Label ID="fflabel" runat="server" Text="Know more about the clothing recycling!" /><br/>
+                                        <asp:Image ID="Image2" runat="server" ImageUrl="images/lion.png" />
+                                    </asp:HyperLink>
+                                    
+                            </tr>
+                            <%--<tr>
+                                <td>
+                                    <asp:Image runat="server" ImageUrl="images/lion.png" />
+                                </td>
+                            </tr>--%>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 

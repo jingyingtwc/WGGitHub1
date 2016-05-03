@@ -1,112 +1,59 @@
-﻿    112·1q!
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
 
 <!DOCTYPE html>
+<script runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"  style="height:100%">
 <head runat="server">
     <title>WASTEGURU from Team ASYST</title>
 
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
-<form id="form1" method="post" runat="server">
-
-    <!-- body area -->
-    <div style="width: 1904px; height: 1050px;margin-left:auto;margin-right:auto;">
-        <asp:ContentPlaceHolder runat="server" ID="Content" />
-    </div>
-    <!-- body area end-->
-
-    <!-- lower sitemap area -->
-    <div style="width: 900px">
-        <div>
-            <table>
-                <tr>
-                    <td>
-                    <div class="3u 12u(mobile)">
-                        <header>
-                            <h2><a href="index.aspx" class="button">HOMEPAGE</a></h2>
-                        </header>
-                        <p style="color:white">Go back to homepage</p>
-                        
-                    </div></td>
-                    <td>
-                    <div class="3u 12u(mobile)">
-                        <header>
-                            <h2><a href="game.aspx" class="button">Game</a></h2>
-                        </header>
-                        <p style="color:white">Start the Game!</p>
-                        
-                    </div></td>
-
-                    <td>
-                    <div class="3u 12u(mobile)">
-                        <header>
-                            <h2><a href="search.aspx" class="button">Collection Date</a></h2>
-                        </header>
-                        <p style="color:white">Find your collection date </p>
-                        
-                    </div></td>
-                    <td>
-
-                    <td>
-                    <div class="3u 12u(mobile)">
-                        <header>
-                            <h2><a href="disposal.aspx" class="button">Disposal Sites</a></h2>
-                        </header>
-                        <p style="color:white">Check disposal sites around you</p>
-                        
-                    </div></td>
-                    <td>
-
-                    <div class="3u 12u(mobile)">
-                        <header>
-                            <h2><a href="#" class="button">Fun Facts</a></h2>
-                        </header>
-                        <p style="color:white">Get to know some fun facts</p>
-                        
-                    </div></td>
-                    <td>
-                    <div class="3u 12u(mobile)">
-                        <header>
-                            <h2><a href="aboutus.aspx" class="button">About us</a></h2>
-                        </header>
-                        <p style="color:white">About us, about Team ASYST</p>
-                        
-                    </div></td>
-
-
-
-                    </tr>
-       </table>
-        </div>
-
+<body style="height:100%">
+    <div style="width: 100%; height: 100%; position: fixed; z-index: auto; text-align: center">
+    <form id="form1" method="post" runat="server">
         
-    </div>
-    <!-- lower navigation area end -->
+        <!-- top banner-->
+        <div id ="banner" style="position:static; background-color:#3FC367; height: 30px;">
+            <div style="vertical-align: middle; text-align: left; position:absolute; top:0;left:0">
+                <img alt="WasteGuru" src="images/logo2.png" style="height:40px"/>
+            </div>
+
+            <div style="text-align:right; vertical-align: middle;position:absolute; top:0;right:0;font-size:1.5em">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">　Home　</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">　Game　</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">　Collection Date　</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">　Disposal Sites　</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">　Fun Facts　</asp:HyperLink>
+            </div>
+        </div>
+        <!-- top banner end-->
 
 
-    <!-- bottom footer area -->
+        <!-- body area -->
+        <div style=" width:99%;height:99%" >
+            <asp:ContentPlaceHolder runat="server" ID="Content" />
+        </div>
+        
+        
+        <p/>
+        <p/>
+        <!-- body area end-->
+        <!-- bottom footer area -->
+        <!-- Copyright -->
+        <div class="copyright">
+            Copyright &copy; 2016.ASYST All rights reserved.								
+        </div>
+        <!-- bottom footer area end -->
 
-    <!-- Social -->
-    <section>
-        <ul class="icons">
-            <li><a href="https://twitter.com/intent/tweet?text=Im%20playing%20Waste%20Guru.%20It%20is%20interesting%20and%20helpful.%20Come%20to%20play%20with%20me." class="icon fa-twitter"><span>Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span>Facebook</span></a></li>
-            <li><a href="#" class="icon fa-google-plus"><span>Google+</span></a></li>
-            <li><a href="#" class="icon fa-linkedin"><span>Linkedin</span></a></li>
-            <li><a href="#" class="icon fa-pinterest"><span>Pinterest</span></a></li>
-        </ul>
-    </section>
 
-    <!-- Copyright -->
-    <div class="copyright">
-        Copyright &copy; 2016.ASYST All rights reserved.								
-    </div>
-    <!-- bottom footer area end -->
-
-    
-</form>
+    </form>
+        </div>
 </body>
 </html>
