@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" MasterPageFile="master.master" AutoEventWireup="true" CodeBehind="funfactmaster.master.cs" Inherits="homepage.funfactmaster" %>
+
+
+<asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <div style="text-align: center; background-color: white">
+        <div style="display: inline-block">
+            <h1>Hi kid.</h1>
+            <h2>Do you want to know more about the waste and tips of recycling them? <br/>
+                Select one category you interested to watch it and share it to your mom!
+            </h2>
+            <table style="width:800px" >
+                <tr>
+                    <td style="width: 30%;text-align:left;font-size:x-large">
+                        <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#0066FF" Font-Bold="True" Font-Italic="True" NavigateUrl="~/clothingff.aspx">Clothing </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#993333" Font-Bold="True" Font-Italic="True" NavigateUrl="~/chemicalff.aspx">Painting </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink3" runat="server" BackColor="#669999" Font-Bold="True" Font-Italic="True" NavigateUrl="~/batteryff.aspx">Battery  </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink4" runat="server" BackColor="#00ff00"   Font-Bold="True" Font-Italic="True" NavigateUrl="~/canff.aspx">Cans     </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink5" runat="server" BackColor="#FF6600" Font-Bold="True" Font-Italic="True" NavigateUrl="~/computerff.aspx">Computer </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink6" runat="server" BackColor="Yellow" Font-Bold="True" Font-Italic="True" NavigateUrl="~/phoneff.aspx">Phones   </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink7" runat="server" BackColor="#00FFCC" Font-Bold="True" Font-Italic="True" NavigateUrl="~/tvff.aspx">TV       </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink8" runat="server" BackColor="#009900" Font-Bold="True" Font-Italic="True" NavigateUrl="~/whitegoodff.aspx">Whitegood</asp:HyperLink><br/>
+                    </td>
+
+
+                    <td style="width: 60%">
+                                    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</asp:Content>
