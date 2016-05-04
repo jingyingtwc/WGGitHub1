@@ -27,8 +27,8 @@
 
 
     <!-- body area -->
-    <div style=" text-align:center; background-color: white">
-<%--    <div style="width: 1904px; height: 1055px; text-align: center; background-color: white; position: absolute; left: 0px; top: 0px">--%>
+    <div style="text-align: center; background-color: white">
+        <%--    <div style="width: 1904px; height: 1055px; text-align: center; background-color: white; position: absolute; left: 0px; top: 0px">--%>
         <p></p>
         <p></p>
 
@@ -64,7 +64,9 @@
                 Font-Name="arial"
                 Font-Size="24pt"
                 HeaderStyle-BackColor="#dcdcdc"
-                HeaderStyle-ForeColor="blue">
+                HeaderStyle-ForeColor="blue"
+                EmptyDataText="Sorry. It seems that we do not have data of your area now.">
+
 
                 <Columns>
                     <asp:BoundField DataField="Suburbs" HeaderText="Your suburb:"
@@ -85,7 +87,7 @@
 
 
         <!-- lowerpart buttons -->
-        <div style="text-align: center; align-content: center;margin:auto;width:800px">
+        <div style="text-align: center; align-content: center; margin: auto; width: 800px">
 
             <table>
                 <tr>

@@ -173,8 +173,11 @@
   <ItemGroup>
     <Content Include="master.master" />
     <Content Include="funfactmaster.Master" />
+    <None Include="Properties\PublishProfiles\WasteGuru7 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\WasteGuru7 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\wasterguru2 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\wasterguru2 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\WG7.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
