@@ -56,6 +56,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.aspx" />
+    <Content Include="batteryff.aspx" />
+    <Content Include="canff.aspx" />
+    <Content Include="chemicalff.aspx" />
+    <Content Include="clothingff.aspx" />
+    <Content Include="computerff.aspx" />
     <Content Include="disposal.aspx" />
     <Content Include="funfact.aspx" />
     <Content Include="game.aspx" />
@@ -63,33 +68,61 @@
     <Content Include="index.aspx" />
     <Content Include="info.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="phoneff.aspx" />
     <Content Include="reg.aspx" />
-    <Content Include="Scripts\assets\css\font-awesome.min.css" />
-    <Content Include="Scripts\assets\css\ie8.css" />
-    <Content Include="Scripts\assets\css\images\banner.svg" />
-    <Content Include="Scripts\assets\css\images\banner2.svg" />
-    <Content Include="Scripts\assets\css\images\header.svg" />
-    <Content Include="Scripts\assets\css\images\toggle.svg" />
-    <Content Include="Scripts\assets\css\main - 副本.css" />
-    <Content Include="Scripts\assets\css\main.css" />
-    <Content Include="Scripts\assets\fonts\fontawesome-webfont.svg" />
-    <Content Include="Scripts\assets\js\ie\html5shiv.js" />
-    <Content Include="Scripts\assets\js\ie\PIE.htc" />
-    <Content Include="Scripts\assets\js\ie\respond.min.js" />
-    <Content Include="Scripts\assets\js\jquery.dropotron.min.js" />
-    <Content Include="Scripts\assets\js\jquery.min.js" />
-    <Content Include="Scripts\assets\js\main.js" />
-    <Content Include="Scripts\assets\js\skel.min.js" />
-    <Content Include="Scripts\assets\js\util.js" />
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="tvff.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="search.aspx" />
+    <Content Include="whitegoodff.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="batteryff.aspx.cs">
+      <DependentUpon>batteryff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="batteryff.aspx.designer.cs">
+      <DependentUpon>batteryff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="canff.aspx.cs">
+      <DependentUpon>canff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="canff.aspx.designer.cs">
+      <DependentUpon>canff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chemicalff.aspx.cs">
+      <DependentUpon>chemicalff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chemicalff.aspx.designer.cs">
+      <DependentUpon>chemicalff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clothingff.aspx.cs">
+      <DependentUpon>clothingff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clothingff.aspx.designer.cs">
+      <DependentUpon>clothingff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="computerff.aspx.cs">
+      <DependentUpon>computerff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="computerff.aspx.designer.cs">
+      <DependentUpon>computerff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="funfactmaster.Master.cs">
+      <DependentUpon>funfactmaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="funfactmaster.Master.designer.cs">
+      <DependentUpon>funfactmaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="info.aspx.cs">
       <DependentUpon>info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,6 +137,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="phoneff.aspx.cs">
+      <DependentUpon>phoneff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phoneff.aspx.designer.cs">
+      <DependentUpon>phoneff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
@@ -112,25 +152,29 @@
     <Compile Include="search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
     </Compile>
+    <Compile Include="tvff.aspx.cs">
+      <DependentUpon>tvff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tvff.aspx.designer.cs">
+      <DependentUpon>tvff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="whitegoodff.aspx.cs">
+      <DependentUpon>whitegoodff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="whitegoodff.aspx.designer.cs">
+      <DependentUpon>whitegoodff.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="master.master" />
+    <Content Include="funfactmaster.Master" />
     <None Include="Properties\PublishProfiles\wasterguru2 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\wasterguru2 - Web Deploy.pubxml" />
-    <Content Include="Scripts\assets\fonts\fontawesome-webfont.eot" />
-    <Content Include="Scripts\assets\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Scripts\assets\fonts\fontawesome-webfont.woff" />
-    <Content Include="Scripts\assets\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Scripts\assets\fonts\FontAwesome.otf" />
-    <Content Include="Scripts\assets\sass\ie8.scss" />
-    <Content Include="Scripts\assets\sass\libs\_functions.scss" />
-    <Content Include="Scripts\assets\sass\libs\_mixins.scss" />
-    <Content Include="Scripts\assets\sass\libs\_skel.scss" />
-    <Content Include="Scripts\assets\sass\libs\_vars.scss" />
-    <Content Include="Scripts\assets\sass\main.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
