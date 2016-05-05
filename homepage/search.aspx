@@ -5,13 +5,17 @@
 
     private void find(object sender, EventArgs e)
     {
-
+        if(TextBox1.Text.Trim()!=""){
         disposal.SelectCommand = "SELECT * FROM collection WHERE Postcode LIKE '%" + TextBox1.Text.Trim(' ') + "%'";
 
 
 
         gvProducts.DataSource = disposal;
-        gvProducts.DataBind();
+        gvProducts.DataBind();}
+        else{
+            emprylabel.Visible = true;
+            emprylabel.Text = "Plese enter a valid postcode";
+        }
     }
 
 </script>
@@ -36,7 +40,7 @@
         <asp:Label ID="label1" runat="server" Font-Size="XX-Large">Enter your postcode and find the rubbish pick up date!</asp:Label><br />
         <asp:Label ID="label4" runat="server" Font-Size="XX-Large">And don't forget to remind your mom before that day!</asp:Label>
 
-        <!--  sth wrong with the table. connot be aligned center -->
+        <!--  table for position -->
         <div style="margin: auto">
             <table style="width: 900px; align-content: center; font-size: x-large" align="center">
                 <tr>
@@ -55,7 +59,7 @@
         <!-- data table -->
         <div id="disposalsitescontent" style="text-align: center; background-color: white; width: 800px; margin: auto">
 
-
+            <asp:Label runat="server" ID="emprylabel" Visible="false" />
             <asp:GridView ID="gvProducts" runat="server"
                 AllowPaging="false"
                 AllowSorting="false"
@@ -110,7 +114,8 @@
                         <table>
                             <tr>
                                 <asp:Label ID="Label3" runat="server" Text="Search"></asp:Label>
-                                <asp:Image ID="Image2" runat="server" ImageUrl="images/search.png" />
+                                <%--<asp:Image ID="Image2" runat="server" ImageUrl="images/search.png" OnClick="find"/>--%>
+                                <asp:ImageButton ID="ImageButton1" ImageUrl="images/search.png" OnClick="find" runat="server" />
                             </tr>
                         </table>
 

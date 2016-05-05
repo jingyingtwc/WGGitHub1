@@ -6,9 +6,183 @@
     {
 
     }
+    
+    protected bool isPostcode(String s)
+    {
+        
+        Boolean b=true;
+        int i;
+        try {
+            i = Int32.Parse(s);
+        }
+        catch(FormatException ex2) 
+        {
+            Console.WriteLine(ex2.Message);
+            b = false;
+        }
 
+        return b;
+    }
+
+    //protected void findByAddress()
+    //{
+    //    string text = TextBox1.Text;
+
+    //    switch (type.SelectedValue)
+    //    {
+    //        case "battery":
+    //            dsAccess.SelectCommand = "select * from battery where postcode > " + mminus + " and postcode <" + mplus + ";";
+    //            infoimage.ImageUrl = "images/battery.png";
+    //            fflabel.Text = "Know more about the battery recycling!";
+    //            fflink.NavigateUrl = "batteryff.aspx";
+    //            break;
+    //        case "can":
+    //            dsAccess.SelectCommand = "select * from can where postcode > " + mminus + " and postcode <" + mplus + ";";
+    //            infoimage.ImageUrl = "images/can.png";
+    //            fflabel.Text = "Know more about the can recycling!";
+    //            fflink.NavigateUrl = "canff.aspx";
+    //            break;
+    //        case "chemical":
+    //            dsAccess.SelectCommand = "select * from chemical where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/paint.png";
+    //            fflabel.Text = "Know more about the chemical&paint recycling!";
+    //            fflink.NavigateUrl = "chemicalff.aspx";
+    //            break;
+    //        case "clothing":
+    //            dsAccess.SelectCommand = "select * from clothing where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/clothe.png";
+    //            fflabel.Text = "Know more about the clothing recycling!";
+    //            fflink.NavigateUrl = "clothingff.aspx";
+    //            break;
+    //        case "computer":
+    //            dsAccess.SelectCommand = "select * from computer where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/computer.png";
+    //            fflabel.Text = "Know more about the computer recycling!";
+    //            fflink.NavigateUrl = "computerff.aspx";
+    //            break;
+    //        case "mobilephone":
+    //            dsAccess.SelectCommand = "select * from mobilephone where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/mobilephone.png";
+    //            fflabel.Text = "Know more about the mobilephone recycling!";
+    //            fflink.NavigateUrl = "phoneff.aspx";
+    //            break;
+    //        case "TV":
+    //            dsAccess.SelectCommand = "select * from tv where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/tv.png";
+    //            fflabel.Text = "Know more about the tv recycling!";
+    //            fflink.NavigateUrl = "tvff.aspx";
+    //            break;
+    //        case "whitegood":
+    //            dsAccess.SelectCommand = "select * from whitegood where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/whitegood.png";
+    //            fflabel.Text = "Know more about the whitegood recycling!";
+    //            fflink.NavigateUrl = "whitegoodff.aspx";
+    //            break;
+    //        default:
+    //            break;
+    //    }
+
+    //    datagv.DataSource = dsAccess;
+    //    datagv.DataBind();
+    //}
+    
+
+    //protected void findByPostcode()
+    //{
+    //    string text = TextBox1.Text;
+    //    int m = 0;
+    //    try
+    //    {
+    //        m = Int32.Parse(text);
+    //    }
+    //    catch (FormatException ex)
+    //    {
+    //        Console.WriteLine(ex.Message);
+    //        formatLabel.Text = "Please enter a valid postcode.";
+    //    }
+
+    //    int mplus = m + 5;
+    //    int mminus = m - 5;
+
+
+
+    //    switch (type.SelectedValue)
+    //    {
+    //        case "battery":
+    //            dsAccess.SelectCommand = "select * from battery where postcode > " + mminus + " and postcode <" + mplus + ";";
+    //            infoimage.ImageUrl = "images/battery.png";
+    //            fflabel.Text = "Know more about the battery recycling!";
+    //            fflink.NavigateUrl = "batteryff.aspx";
+    //            break;
+    //        case "can":
+    //            dsAccess.SelectCommand = "select * from can where postcode > " + mminus + " and postcode <" + mplus + ";";
+    //            infoimage.ImageUrl = "images/can.png";
+    //            fflabel.Text = "Know more about the can recycling!";
+    //            fflink.NavigateUrl = "canff.aspx";
+    //            break;
+    //        case "chemical":
+    //            dsAccess.SelectCommand = "select * from chemical where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/paint.png";
+    //            fflabel.Text = "Know more about the chemical&paint recycling!";
+    //            fflink.NavigateUrl = "chemicalff.aspx";
+    //            break;
+    //        case "clothing":
+    //            dsAccess.SelectCommand = "select * from clothing where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/clothe.png";
+    //            fflabel.Text = "Know more about the clothing recycling!";
+    //            fflink.NavigateUrl = "clothingff.aspx";
+    //            break;
+    //        case "computer":
+    //            dsAccess.SelectCommand = "select * from computer where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/computer.png";
+    //            fflabel.Text = "Know more about the computer recycling!";
+    //            fflink.NavigateUrl = "computerff.aspx";
+    //            break;
+    //        case "mobilephone":
+    //            dsAccess.SelectCommand = "select * from mobilephone where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/mobilephone.png";
+    //            fflabel.Text = "Know more about the mobilephone recycling!";
+    //            fflink.NavigateUrl = "phoneff.aspx";
+    //            break;
+    //        case "TV":
+    //            dsAccess.SelectCommand = "select * from tv where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/tv.png";
+    //            fflabel.Text = "Know more about the tv recycling!";
+    //            fflink.NavigateUrl = "tvff.aspx";
+    //            break;
+    //        case "whitegood":
+    //            dsAccess.SelectCommand = "select * from whitegood where postcode > " + mminus + " and postcode <" + mplus + ";";
+
+    //            infoimage.ImageUrl = "images/whitegood.png";
+    //            fflabel.Text = "Know more about the whitegood recycling!";
+    //            fflink.NavigateUrl = "whitegoodff.aspx";
+    //            break;
+    //        default:
+    //            break;
+    //    }
+
+    //    datagv.DataSource = dsAccess;
+    //    datagv.DataBind();
+
+
+ 
+    //}
+    
     protected void find(object sender, EventArgs e)
     {
+        formatLabel.Text = null;
+        
         string text = TextBox1.Text;
         int m = 0;
         try
@@ -119,7 +293,7 @@
             <p></p>
 
             <p style="color: blueviolet; font-size: 3em;">Hi kid! </p>
-            <p style="color: blueviolet; font-size: 3em;">Find out your nearest disposal sites here!</p>
+            <p style="color: blueviolet; font-size: 3em;">You can find out your nearest disposal sites here!</p>
         </div>
 
 
@@ -134,11 +308,11 @@
                     </td>
                     <td>
                         <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
-                            <asp:TextBox ID="TextBox1" runat="server" Font-Size="Large"></asp:TextBox>
-                            <asp:DropDownList ID="type" runat="server" Font-Size="Large">
-                                <asp:ListItem id="chemical" runat="server" Selected="True" Value="chemical" />
+                            <asp:TextBox ID="TextBox1" runat="server" Font-Size="Large" Width="150px" ></asp:TextBox>
+                            <asp:DropDownList ID="type" runat="server" Font-Size="Large" Width="150px">
+                                <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" />
+                                <asp:ListItem id="chemical" runat="server" Value="chemical" />
                                 <asp:ListItem id="battery" runat="server" Value="battery" />
-                                <asp:ListItem id="clothing" runat="server" Value="clothing" />
                                 <asp:ListItem id="computer" runat="server" Value="computer" />
                                 <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" />
                                 <asp:ListItem id="TV" runat="server" Value="TV" />
@@ -149,7 +323,7 @@
                     </td>
                     <td>
                         <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
-                            <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" />
+                            <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="50%"/>
                         </div>
                     </td>
                 </tr>

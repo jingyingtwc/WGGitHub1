@@ -20,24 +20,24 @@
     <form id="form1" method="post" runat="server">
         
         <!-- top banner-->
-        <div id ="banner" style="position:static; background-color:#3FC367; height: 30px;">
-            <div style="vertical-align: middle; text-align: left; position:absolute; top:0;left:0">
-                <img alt="WasteGuru" src="images/logo2.png" style="height:40px"/>
+        <div id ="banner" style="position:static; background-color:#3FC367; height: 60px;">
+            <div style="vertical-align: central; text-align: left; position:absolute; top:5px; left:5px">
+                <img alt="WasteGuru" src="images/logo2.png" style="height:55px"/>
             </div>
 
-            <div style="text-align:right; vertical-align: middle;position:absolute; top:0;right:0;font-size:1.5em">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">　Home　</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">　Game　</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">　Collection Date　</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">　Disposal Sites　</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">　Fun Facts　</asp:HyperLink>
+            <div style="text-align:right; vertical-align: middle;position:absolute; top:5px;right:10px;font-size:2em; word-spacing: normal;">
+                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">　Home　</asp:HyperLink>
+                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">　Game　</asp:HyperLink>
+                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">　Collection Days　</asp:HyperLink>
+                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">　Disposal Sites　</asp:HyperLink>
+                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">　Recycling Facts　</asp:HyperLink>
             </div>
         </div>
         <!-- top banner end-->
 
 
         <!-- body area -->
-        <div style=" width:99%;height:99%" >
+        <div style="width:99%;height:99%" >
             <asp:ContentPlaceHolder runat="server" ID="Content" />
         </div>
         

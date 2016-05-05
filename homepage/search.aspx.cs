@@ -13,5 +13,10 @@ namespace homepage
         {
 
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }
