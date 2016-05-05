@@ -37,7 +37,7 @@
         <p></p>
 
         <p style="font-size: xx-large">Hi kid!</p>
-        <asp:Label ID="label1" runat="server" Font-Size="XX-Large">Enter your postcode and find the rubbish pick up date!</asp:Label><br />
+        <asp:Label ID="label1" runat="server" Font-Size="3em">Enter your postcode and find the rubbish pick up date!</asp:Label><br />
         <asp:Label ID="label4" runat="server" Font-Size="XX-Large">And don't forget to remind your mom before that day!</asp:Label>
 
         <!--  table for position -->

@@ -5,10 +5,15 @@
     <%--<body>--%>
     <!-- Main -->
     <div style=" text-align:center; background-color: white">
-        <div style="display:inline-block">
-            Why should batteries be recycled?
-Currently, less than 3% of all batteries purchased in Australia are recycled, the rest going to landfill. Battery recycling allows the non-renewable resources in batteries to be recovered. It removes toxic and hazardous substances from landfill, particularly lead, cadmium and mercury that may contaminate groundwater. Lithium metal batteries can cause explosions or fires if inappropriately stored or disposed.
-What happens to the batteries collected?
+        <div style="display:inline-block;text-align:left">
+            Why should batteries be recycled?<br/>
+Currently, less than 3% of all batteries purchased in Australia are recycled, 
+            the rest going to landfill. Battery recycling allows the non-renewable 
+            resources in batteries to be recovered. 
+            It removes toxic and hazardous substances from landfill, particularly lead, 
+            cadmium and mercury that may contaminate groundwater. Lithium metal batteries 
+            can cause explosions or fires if inappropriately stored or disposed.<br/>
+What happens to the batteries collected?<br/>
 After collection batteries are sorted by chemistry type. They are then sent on to the respective recyclers in Australia and overseas. Australia currently does not have the technology and services required to recycle rechargeable and single use batteries so they will be processed overseas by a company specialising in the recovery of nickel, cadmium, lithium, zinc and other precious resources to strict environmental standards.
 
         </div>

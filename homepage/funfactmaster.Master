@@ -13,7 +13,7 @@
                 <tr>
                     <td style="width: 30%;text-align:left;font-size:x-large">
                         <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#0066FF" Font-Bold="True" Font-Italic="True" NavigateUrl="~/clothingff.aspx">Clothing </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#993333" Font-Bold="True" Font-Italic="True" NavigateUrl="~/chemicalff.aspx">Painting </asp:HyperLink><br/>
+                        <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#66ffff" Font-Bold="True" Font-Italic="True" NavigateUrl="~/chemicalff.aspx">Painting </asp:HyperLink><br/>
                         <asp:HyperLink ID="HyperLink3" runat="server" BackColor="#669999" Font-Bold="True" Font-Italic="True" NavigateUrl="~/batteryff.aspx">Battery  </asp:HyperLink><br/>
                         <asp:HyperLink ID="HyperLink4" runat="server" BackColor="#00ff00"   Font-Bold="True" Font-Italic="True" NavigateUrl="~/canff.aspx">Cans     </asp:HyperLink><br/>
                         <asp:HyperLink ID="HyperLink5" runat="server" BackColor="#FF6600" Font-Bold="True" Font-Italic="True" NavigateUrl="~/computerff.aspx">Computer </asp:HyperLink><br/>
@@ -23,7 +23,7 @@
                     </td>
 
 
-                    <td style="width: 60%">
+                    <td style="width: 60%;font-size:x-large">
                                     <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
 
                     </td>

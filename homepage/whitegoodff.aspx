@@ -5,9 +5,14 @@
     <%--<body>--%>
     <!-- Main -->
     <div style=" text-align:center; background-color: white">
-        <div style="display:inline-block">
-            White goods are metal items that include washing machines, dryers, stoves, refrigerators and microwaves. They are classed as electronic waste (e-waste). E-waste contains toxic and hazardous materials such as lead, mercury, cadmium, and brominated fire retardants.
-Reducing electronic waste doesn't just mean recycling old equipment. You can also:• Consider buying them and peripherals from refurbishing centres to encourage more white goods recycling initiatives; • Don't let old item sit around the house unused. The sooner you recycle it, the more chance it will be useful to someone else.
+        <div style="display:inline-block;text-align:left">
+            White goods are metal items that include washing machines, dryers, stoves, refrigerators and microwaves. 
+            They are classed as electronic waste (e-waste). <br/>E-waste contains toxic and hazardous materials 
+            such as lead, mercury, cadmium, and brominated fire retardants.
+            Reducing electronic waste doesn't just mean recycling old equipment. <br/>
+            You can also:<br/>
+            • Consider buying them and peripherals from refurbishing centres to encourage more white goods recycling initiatives; <br/>
+            • Don't let old item sit around the house unused. The sooner you recycle it, the more chance it will be useful to someone else.
 
         </div>
     </div>

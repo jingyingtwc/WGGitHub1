@@ -5,14 +5,16 @@
     <%--<body>--%>
     <!-- Main -->
     <div style=" text-align:center; background-color: white">
-        <div style="display:inline-block">
-            Paint contains chemicals such as solvents and metals that can contaminate our groundwater and endanger human health. It is important to not put these items into your garbage bin. By recycling your paint you can play an important role in protecting our environment.
-*  Use up left over paint, or give it to a friend to use.
-*  Read the labels for safety instructions.
-*  Never mix paint with any other liquid or solid substance, other than as directed on the label.
-*  Never put liquid paint in the garbage bin and never pour it down the drain.
-*  Store leftover paint in the original container with the label intact.
-*  Store paint away from extreme temperatures.
+        <div style="display:inline-block;text-align:left">
+            Paint contains chemicals such as solvents and metals that can contaminate our groundwater and endanger 
+            human health. It is important to not put these items into your garbage bin. By recycling your paint 
+            you can play an important role in protecting our environment.<br/>
+*  Use up left over paint, or give it to a friend to use.<br/>
+*  Read the labels for safety instructions.<br/>
+*  Never mix paint with any other liquid or solid substance, other than as directed on the label.<br/>
+*  Never put liquid paint in the garbage bin and never pour it down the drain.<br/>
+*  Store leftover paint in the original container with the label intact.<br/>
+*  Store paint away from extreme temperatures.<br/>
 
 
         </div>
