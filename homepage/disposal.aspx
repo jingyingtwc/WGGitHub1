@@ -268,8 +268,8 @@
 
         <!-- header -->
         <div style="display: inline-block">
-            <p style="font-size: 3em;">You can find out your nearest disposal sites here!</p>
-            <p style="font-size: 3em;">So you know next time where to dispose.</p>
+            <p style="font-size: 47px;">You can find out your nearest disposal sites here!</p>
+            <p style="font-size: 47px;">So you know next time where to dispose.</p>
         </div>
         <br />
 
@@ -278,20 +278,20 @@
         <div style="display: inline-block; position: relative; top: 0; text-align: center; width: 1150px; height: 150px">
 
 
-            <div style="display: inline-block; position: absolute; top: 0; left: 0; font-size: 3em; height: 150px; width: 300px; color: goldenrod">
+            <div style="display: inline-block; position: absolute; top: 0; left: 0; font-size: 47px; height: 150px; width: 300px; color: goldenrod">
                 Your postcode
                 <br />
                 or city:
             </div>
 
             <div style="display: inline-block; position: absolute; top: 0; left: 345px; height: 150px">
-                <asp:TextBox Style="display: block;" ID="TextBox1" runat="server" Font-Size="40pt" Width="600px" Height="55px" Font-Bold="True" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black"></asp:TextBox>
-                <asp:DropDownList Style="display: block" ID="type" runat="server" Font-Size="40pt" Width="600px" Height="55px" BackColor="#3FC367" Font-Bold="True">
+                <asp:TextBox Style="display: block;" ID="TextBox1" runat="server" Font-Size="52px" Width="600px" Height="55px" Font-Bold="True" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black"></asp:TextBox>
+                <asp:DropDownList Style="display: block" ID="type" runat="server" Font-Size="50px" Width="600px" Height="55px" BackColor="#3FC367" Font-Bold="True">
                     <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" Text="Clothing&Textile" />
-                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Chimical&Painting" />
+                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Chemical&Painting" />
                     <asp:ListItem id="battery" runat="server" Value="battery" Text="Battery" />
                     <asp:ListItem id="computer" runat="server" Value="computer" Text="Computer" />
-                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" />
+                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" Text="Mobile Phone" />
                     <asp:ListItem id="TV" runat="server" Value="TV" Text="TV" />
                     <asp:ListItem id="whitegood" runat="server" Value="whitegood" Text="White Good" />
                     <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum can" />
@@ -308,7 +308,7 @@
         </asp:CustomValidator>
             </div>
             <div style="display: inline-block; position: absolute; top: 0; right: 0; height: 150px">
-                <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="110" Width="150" Font-Size="2.9em" />
+                <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="110" Width="150" Font-Size="45px" />
             </div>
 
 
@@ -361,7 +361,7 @@
                     <table style="display: inline">
                         <tr>
                             <td>
-                                <asp:Label ID="fflabel" runat="server" Text="Know more about the clothing recycling!" Style="text-decoration: none;" Font-Size="1.3em" /></td>
+                                <asp:Label ID="fflabel" runat="server" Text="Know more about the clothing recycling!" Style="text-decoration: none;" Font-Size="20px" /></td>
                         </tr>
                         <tr>
                             <td>

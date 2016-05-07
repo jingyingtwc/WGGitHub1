@@ -70,9 +70,6 @@
     <Content Include="login.aspx" />
     <Content Include="phoneff.aspx" />
     <Content Include="reg.aspx" />
-    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.7.1.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="tvff.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
