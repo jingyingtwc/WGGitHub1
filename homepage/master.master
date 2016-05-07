@@ -10,50 +10,59 @@
 </script>
 
 
-<html xmlns="http://www.w3.org/1999/xhtml"  style="height:100%">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>WASTEGURU from Team ASYST</title>
-
+    <style type="text/css">
+        <!--
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        -->
+    </style>
 </head>
-<body style="height:100%">
-    <div style="width: 100%; height: 100%; position: fixed; z-index: auto; text-align: center">
-    <form id="form1" method="post" runat="server">
-        
-        <!-- top banner-->
-        <div id ="banner" style="position:static; background-color:#3FC367; height: 60px;">
-            <div style="vertical-align: central; text-align: left; position:absolute; top:5px; left:5px">
-                <img alt="WasteGuru" src="images/logo2.png" style="height:55px"/>
+<body>
+    <div style="width:99vw; position: relative; top: 0; text-align: center; padding: 0; margin: 0">
+        <form id="form1" method="post" runat="server">
+
+            <!-- top banner-->
+            <div id="banner" style="position: relative; background-color: #3FC367; height: 60px; padding: 0; margin: 0;">
+                <div style="vertical-align: central; text-align: left; position: relative; top: 5px; left: 0px">
+                    <img alt="WasteGuru" src="images/logo2.png" style="height: 55px" />
+                </div>
+
+                <div style="padding: 0; margin: 0; vertical-align: middle; position: absolute; top:0px; right:0px; font-size: 2em;z-index:1">
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">　Home　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">　Game　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">　Collection Days　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">　Disposal Sites　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">　Recycling Facts</asp:HyperLink>
+                </div>
             </div>
+            <!-- top banner end-->
 
-            <div style="text-align:right; vertical-align: middle;position:absolute; top:5px;right:10px;font-size:2em; word-spacing: normal;">
-                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">　Home　</asp:HyperLink>
-                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">　Game　</asp:HyperLink>
-                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">　Collection Days　</asp:HyperLink>
-                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">　Disposal Sites　</asp:HyperLink>
-                <asp:HyperLink class="link" style="text-decoration:none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">　Recycling Facts　</asp:HyperLink>
+
+
+            <!-- body area -->
+            <div>
+                <asp:ContentPlaceHolder runat="server" ID="Content" />
             </div>
-        </div>
-        <!-- top banner end-->
+            <p />
+            <p />
+            <!-- body area end-->
 
 
-        <!-- body area -->
-        <div style="width:99%;height:99%" >
-            <asp:ContentPlaceHolder runat="server" ID="Content" />
-        </div>
-        
-        
-        <p/>
-        <p/>
-        <!-- body area end-->
-        <!-- bottom footer area -->
-        <!-- Copyright -->
-        <div class="copyright">
-            Copyright &copy; 2016.ASYST All rights reserved.								
-        </div>
-        <!-- bottom footer area end -->
+
+            <!-- bottom footer area -->
+            <!-- Copyright -->
+            <div >
+                Copyright &copy; 2016.ASYST All rights reserved.								
+            </div>
+            <!-- bottom footer area end -->
 
 
-    </form>
-        </div>
+        </form>
+    </div>
 </body>
 </html>
