@@ -4,8 +4,8 @@
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <%--<body>--%>
     <!-- Main -->
-    <div style=" text-align:center; background-color: white">
-        <div style="display:inline-block;text-align:left">
+  
+        <div style="text-align:left;font-size:0.6em">
             Paint contains chemicals such as solvents and metals that can contaminate our groundwater and endanger 
             human health. It is important to not put these items into your garbage bin. By recycling your paint 
             you can play an important role in protecting our environment.<br/>
@@ -18,7 +18,7 @@
 
 
         </div>
-    </div>
+
     <!-- Featured -->
     <div id="featured">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">

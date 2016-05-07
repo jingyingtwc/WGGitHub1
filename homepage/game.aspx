@@ -4,7 +4,6 @@
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <%--<body>--%>
-    <div style="font-size:66pt">Welcome to the world of WasteGuru!</div>
 
     <div style="text-align: center; position: relative; margin-left: auto; margin-right: auto; top: 0; width: 900px; height: 576px">
 

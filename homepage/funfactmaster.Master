@@ -3,32 +3,51 @@
 
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <div style="text-align: center; background-color: white">
-        <div style="display: inline-block">
-            <h1>Hi kid.</h1>
-            <h2>Do you want to know more about the waste and tips of recycling them? <br/>
-                Select one category you interested to watch it and share it to your mom!
-            </h2>
-            <table style="width:800px" >
-                <tr>
-                    <td style="width: 30%;text-align:left;font-size:x-large">
-                        <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#0066FF" Font-Bold="True" Font-Italic="True" NavigateUrl="~/clothingff.aspx">Clothing </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#66ffff" Font-Bold="True" Font-Italic="True" NavigateUrl="~/chemicalff.aspx">Painting </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink3" runat="server" BackColor="#669999" Font-Bold="True" Font-Italic="True" NavigateUrl="~/batteryff.aspx">Battery  </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink4" runat="server" BackColor="#00ff00"   Font-Bold="True" Font-Italic="True" NavigateUrl="~/canff.aspx">Cans     </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink5" runat="server" BackColor="#FF6600" Font-Bold="True" Font-Italic="True" NavigateUrl="~/computerff.aspx">Computer </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink6" runat="server" BackColor="Yellow" Font-Bold="True" Font-Italic="True" NavigateUrl="~/phoneff.aspx">Phones   </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink7" runat="server" BackColor="#00FFCC" Font-Bold="True" Font-Italic="True" NavigateUrl="~/tvff.aspx">TV       </asp:HyperLink><br/>
-                        <asp:HyperLink ID="HyperLink8" runat="server" BackColor="#009900" Font-Bold="True" Font-Italic="True" NavigateUrl="~/whitegoodff.aspx">Whitegood</asp:HyperLink><br/>
-                    </td>
+    <div style="text-align: center; background-color: white; min-width: 1150px; font-size: 3em;">
+        Do you want to know more about the waste and tips of recycling them?
+        <br />
+        Select one category to watch it and share it to your mum!
+        <div style="display: inline-block; width: 1150px; position: relative; top: 0; left: 0; overflow: auto;">
 
 
-                    <td style="width: 60%;font-size:x-large">
-                                    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
+            <div style="width: 350px; font-size:0.8em; float:left">
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #0066FF;text-decoration:none">
+                    <a href="clothingff.aspx">Clothing&Textile</a>
+                </div>
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #66ffff;text-decoration:none">
+                    <a href="chemicalff.aspx">Painting</a>
 
-                    </td>
-                </tr>
-            </table>
+                </div>
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #669999;text-decoration:none">
+                    <a href="batteryff.aspx">Battery</a>
+
+                </div>
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #00ff00;text-decoration:none">
+                    <a href="canff.aspx">Aluminum can</a>
+
+                </div>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: #FF6600;text-decoration:none">
+                    <a href="computerff.aspx">Computer</a>
+
+                </div>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: yellow;text-decoration:none">
+                    <a href="phoneff.aspx">Mobile Phone</a>
+
+                </div>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: #00FFCC;text-decoration:none">
+                    <a href="tvff.aspx">Television</a>
+
+                </div>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: #009900;text-decoration:none">
+                    <a href="whitegoodff.aspx">White Good</a>
+
+                </div>
+            </div>
+            <div style="width: 750px; float:right">
+                <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
+            </div>
+
         </div>
     </div>
 </asp:Content>
+

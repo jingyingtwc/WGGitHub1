@@ -6,16 +6,17 @@
     {
 
     }
-    
+
     protected bool isPostcode(String s)
     {
-        
-        Boolean b=true;
+
+        Boolean b = true;
         int i;
-        try {
+        try
+        {
             i = Int32.Parse(s);
         }
-        catch(FormatException ex2) 
+        catch (FormatException ex2)
         {
             Console.WriteLine(ex2.Message);
             b = false;
@@ -91,7 +92,7 @@
     //    datagv.DataSource = dsAccess;
     //    datagv.DataBind();
     //}
-    
+
 
     //protected void findByPostcode()
     //{
@@ -176,13 +177,13 @@
     //    datagv.DataBind();
 
 
- 
+
     //}
-    
+
     protected void find(object sender, EventArgs e)
     {
-        formatLabel.Text = null;
-        
+        //formatLabel.Text = null;
+
         string text = TextBox1.Text;
         int m = 0;
         try
@@ -192,7 +193,7 @@
         catch (FormatException ex)
         {
             Console.WriteLine(ex.Message);
-            formatLabel.Text = "Please enter a valid postcode.";
+            //formatLabel.Text = "Please enter a valid postcode.";
         }
 
         int mplus = m + 5;
@@ -283,64 +284,63 @@
     <asp:AccessDataSource runat="server" ID="dsAccess"
         DataFile="disposal.mdb" />
 
-        <div style=" text-align:center; background-color: white">
-
-<%--    <div style="width: 100%; background-color: white; text-align: center; position: absolute; top: 0px;">--%>
+    <div style="text-align: center; position: relative; top: 0; background-color: white; min-width: 1150px">
 
         <!-- header -->
-        <div style="align-content: center; font-size: x-large">
-            <p></p>
-            <p></p>
-
-            <p style="color: blueviolet; font-size: 3em;">Hi kid! </p>
-            <p style="color: blueviolet; font-size: 3em;">You can find out your nearest disposal sites here!</p>
+        <div style="display: inline-block">
+            <p style="font-size: 3em;">You can find out your nearest disposal sites here!</p>
+            <p style="font-size: 3em;">So you know next time where to dispose.</p>
         </div>
+        <br />
 
 
         <!-- textbox area -->
-        <div style="width: 800px; margin: auto; text-align: center">
-            <table>
-                <tr>
-                    <td>
-                        <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
-                            <asp:Label runat="server" Text="Enter your postcode and select what kind of waste you want to dispose!" Font-Size="Large" ForeColor="#6600FF" />
-                        </div>
-                    </td>
-                    <td>
-                        <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
-                            <asp:TextBox ID="TextBox1" runat="server" Font-Size="Large" Width="150px" ></asp:TextBox>
-                            <asp:DropDownList ID="type" runat="server" Font-Size="Large" Width="150px">
-                                <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" />
-                                <asp:ListItem id="chemical" runat="server" Value="chemical" />
-                                <asp:ListItem id="battery" runat="server" Value="battery" />
-                                <asp:ListItem id="computer" runat="server" Value="computer" />
-                                <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" />
-                                <asp:ListItem id="TV" runat="server" Value="TV" />
-                                <asp:ListItem id="whitegood" runat="server" Value="whitegood" />
-                                <asp:ListItem id="can" runat="server" Value="can" />
-                            </asp:DropDownList>
-                        </div>
-                    </td>
-                    <td>
-                        <div style="height: 100px; width: 200px; text-align: center; vertical-align: middle">
-                            <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="50%"/>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <div style="display: inline-block; position: relative; top: 0; text-align: center; width: 1150px; height: 150px">
+
+
+            <div style="display: inline-block; position: absolute; top: 0; left: 0; font-size: 3em; height: 150px; width: 300px; color: goldenrod">
+                Your postcode
+                <br />
+                or city:
+            </div>
+
+            <div style="display: inline-block; position: absolute; top: 0; left: 345px; height: 150px">
+                <asp:TextBox Style="display: block;" ID="TextBox1" runat="server" Font-Size="40pt" Width="600px" Height="55px" Font-Bold="True" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black"></asp:TextBox>
+                <asp:DropDownList Style="display: block" ID="type" runat="server" Font-Size="40pt" Width="600px" Height="55px" BackColor="#3FC367" Font-Bold="True">
+                    <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" Text="Clothing&Textile" />
+                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Chimical&Painting" />
+                    <asp:ListItem id="battery" runat="server" Value="battery" Text="Battery" />
+                    <asp:ListItem id="computer" runat="server" Value="computer" Text="Computer" />
+                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" />
+                    <asp:ListItem id="TV" runat="server" Value="TV" Text="TV" />
+                    <asp:ListItem id="whitegood" runat="server" Value="whitegood" Text="White Good" />
+                    <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum can" />
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator ID="va1" runat="server" Style="font-size: 2em" ErrorMessage="Please enter a postcode." ControlToValidate="TextBox1" />
+                <asp:RegularExpressionValidator ID="va2" runat="server" Style="font-size: 2em" ControlToValidate="TextBox1" ValidationExpression="\d\d\d\d"
+                    ErrorMessage="Please enter a valid postcode" Display="Dynamic" />
+            </div>
+            <div style="display: inline-block; position: absolute; top: 0; right: 0; height: 150px">
+                <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="110" Width="150" Font-Size="2.9em" />
+            </div>
+
+
+
         </div>
 
-
-        <!-- data table for chemical -->
-        <div style="margin: auto; text-align: center; background-color: white; width: 800px">
-            <asp:Label ID="formatLabel" runat="server" />
+        <div style="display: inline-block">
+            <asp:Label runat="server" ID="emprylabel" Visible="false" />
             <asp:GridView ID="datagv" runat="server"
+                AllowPaging="false"
+                AllowSorting="false"
                 AutoGenerateColumns="false"
+                PageSize="4"
                 Font-Name="arial"
-                Font-Size="14pt"
+                Font-Size="24pt"
                 HeaderStyle-BackColor="#dcdcdc"
                 HeaderStyle-ForeColor="blue"
                 EmptyDataText="Sorry. It seems that we do not have data of your area now.">
+
 
                 <Columns>
                     <asp:BoundField DataField="Retailer" HeaderText="Retailer"
@@ -351,56 +351,42 @@
                         SortExpression="SiteAddress" />
                     <asp:BoundField DataField="Postcode" HeaderText="Postcode"
                         SortExpression="Postcode" />
-
                 </Columns>
 
             </asp:GridView>
             <br />
+            <asp:Label ID="lblPagingInfo" runat="server" />
+        </div>
+        <br />
+
+
+        <!-- lowerpart buttons -->
+        <div style="position: relative; top: 0; left: 0; margin: auto; width: 1050px; height: 190px; text-align: center">
+            <div style="position: absolute; left: 0; top: 33px">
+                <a href="index.aspx">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" /></a>
+            </div>
+            <div style="display: inline">
+                <asp:Image ID="infoimage" runat="server" ImageUrl="images/clothe.png" Height="190px" />
+            </div>
+            <div style="position: absolute; right: 0; top: 13px">
+                <asp:HyperLink ID="fflink" runat="server" NavigateUrl="~/clothingff.aspx">
+                    <table style="display: inline">
+                        <tr>
+                            <td>
+                                <asp:Label ID="fflabel" runat="server" Text="Know more about the clothing recycling!" Style="text-decoration: none;" Font-Size="1.3em" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Image ID="Image2" runat="server" ImageUrl="images/lion.png" /></td>
+                        </tr>
+                    </table>
+                </asp:HyperLink>
+            </div>
+
 
         </div>
 
-
-        <!-- lower part buttons -->
-        <div style="text-align: center; align-content: center; ">
-            <table style="width: 800px; height: 300px; display: inline-block;">
-                <tr>
-                    <td style="width: 200px; height: 300px">
-                        <table>
-                            <tr>
-                                <td><a href="index.aspx">
-                                    <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
-                                    <asp:Label ID="Label2" runat="server" Text="Back"></asp:Label>
-                                </a></td>
-                            </tr>
-
-                        </table>
-                    </td>
-
-                    <td style="text-align: center; width: 400px; height: 200px;">
-                        <asp:Image ID="infoimage" runat="server" ImageUrl="images/lol.png" />
-                    </td>
-
-                    <td style="width: 200px; height: 300px">
-                        <table style="text-align: right">
-                            <tr>
-                                <td>
-                                    <asp:HyperLink ID="fflink" runat="server" NavigateUrl="~/clothingff.aspx">
-                                        <asp:Label ID="fflabel" runat="server" Text="Know more about the clothing recycling!" /><br/>
-                                        <asp:Image ID="Image2" runat="server" ImageUrl="images/lion.png" />
-                                    </asp:HyperLink>
-                                    
-                            </tr>
-                            <%--<tr>
-                                <td>
-                                    <asp:Image runat="server" ImageUrl="images/lion.png" />
-                                </td>
-                            </tr>--%>
-                        </table>
-
-                    </td>
-                </tr>
-            </table>
-        </div>
     </div>
 
 

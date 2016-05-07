@@ -14,12 +14,14 @@
 <head runat="server">
     <title>WASTEGURU from Team ASYST</title>
     <style type="text/css">
-        <!--
         * {
             margin: 0px;
             padding: 0px;
         }
-        -->
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -27,9 +29,9 @@
         <form id="form1" method="post" runat="server">
 
             <!-- top banner-->
-            <div id="banner" style="position: relative; background-color: #3FC367; height: 60px; padding: 0; margin: 0;">
-                <div style="vertical-align: central; text-align: left; position: relative; top: 5px; left: 0px">
-                    <img alt="WasteGuru" src="images/logo2.png" style="height: 55px" />
+            <div id="banner" style="position: relative; background-color: #3FC367; height: 50px; padding: 0; margin: 0;min-width:1150px">
+                <div style="vertical-align: central; text-align: left; position: relative; top: 0px; left: 0px">
+                    <a href="index.aspx"><img alt="WasteGuru" src="images/logo2.png" style="height: 50px" /></a>
                 </div>
 
                 <div style="padding: 0; margin: 0; vertical-align: middle; position: absolute; top:0px; right:0px; font-size: 2em;z-index:1">
@@ -56,7 +58,7 @@
 
             <!-- bottom footer area -->
             <!-- Copyright -->
-            <div >
+            <div style="min-width:1150px">
                 Copyright &copy; 2016.ASYST All rights reserved.								
             </div>
             <!-- bottom footer area end -->
