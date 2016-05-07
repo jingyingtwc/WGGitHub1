@@ -296,8 +296,8 @@
                     <asp:ListItem id="whitegood" runat="server" Value="whitegood" Text="White Good" />
                     <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum can" />
                 </asp:DropDownList>
-                <%--<asp:RequiredFieldValidator ID="va1" runat="server" Style="font-size: 2em" ErrorMessage="Please enter a postcode." ControlToValidate="TextBox1" />
-                <asp:RegularExpressionValidator ID="va2" runat="server" Style="font-size: 2em" ControlToValidate="TextBox1" ValidationExpression="\d\d\d\d"
+                <asp:RequiredFieldValidator ID="va1" runat="server" Style="font-size: 2em" ErrorMessage="Please enter a postcode or a city." ControlToValidate="TextBox1" />
+                <%--<asp:RegularExpressionValidator ID="va2" runat="server" Style="font-size: 2em" ControlToValidate="TextBox1" ValidationExpression="\d\d\d\d"
                     ErrorMessage="Please enter a valid postcode" Display="Dynamic" />--%>
                 <asp:CustomValidator
                     ID="validator"

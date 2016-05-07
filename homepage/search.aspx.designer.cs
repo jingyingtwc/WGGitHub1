@@ -40,13 +40,13 @@ namespace homepage {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator va1;
         
         /// <summary>
-        /// va2 control.
+        /// validator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator va2;
+        protected global::System.Web.UI.WebControls.CustomValidator validator;
         
         /// <summary>
         /// emprylabel control.
