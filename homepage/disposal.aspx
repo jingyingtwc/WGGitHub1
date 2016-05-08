@@ -99,14 +99,14 @@
             case "can":
                 dsAccess.SelectCommand = "select * from can where postcode > " + mminus + " and postcode <" + mplus + ";";
                 infoimage.ImageUrl = "images/can.png";
-                fflabel.Text = "Know more about the can recycling!";
+                fflabel.Text = "Know more about the aluminum can recycling!";
                 fflink.NavigateUrl = "canff.aspx";
                 break;
             case "chemical":
                 dsAccess.SelectCommand = "select * from chemical where postcode > " + mminus + " and postcode <" + mplus + ";";
 
                 infoimage.ImageUrl = "images/paint.png";
-                fflabel.Text = "Know more about the chemical&paint recycling!";
+                fflabel.Text = "Know more about the painting recycling!";
                 fflink.NavigateUrl = "chemicalff.aspx";
                 break;
             case "clothing":
@@ -127,21 +127,21 @@
                 dsAccess.SelectCommand = "select * from mobilephone where postcode > " + mminus + " and postcode <" + mplus + ";";
 
                 infoimage.ImageUrl = "images/mobilephone.png";
-                fflabel.Text = "Know more about the mobilephone recycling!";
+                fflabel.Text = "Know more about the mobile phone recycling!";
                 fflink.NavigateUrl = "phoneff.aspx";
                 break;
             case "TV":
                 dsAccess.SelectCommand = "select * from tv where postcode > " + mminus + " and postcode <" + mplus + ";";
 
                 infoimage.ImageUrl = "images/tv.png";
-                fflabel.Text = "Know more about the tv recycling!";
+                fflabel.Text = "Know more about the television recycling!";
                 fflink.NavigateUrl = "tvff.aspx";
                 break;
             case "whitegood":
                 dsAccess.SelectCommand = "select * from whitegood where postcode > " + mminus + " and postcode <" + mplus + ";";
 
                 infoimage.ImageUrl = "images/whitegood.png";
-                fflabel.Text = "Know more about the whitegood recycling!";
+                fflabel.Text = "Know more about the white good recycling!";
                 fflink.NavigateUrl = "whitegoodff.aspx";
                 break;
             default:
@@ -167,21 +167,21 @@
             case "can":
                 dsAccess.SelectCommand = "select * from can where SiteSuburb LIKE '%" + text + "%';";
                 infoimage.ImageUrl = "images/can.png";
-                fflabel.Text = "Know more about the can recycling!";
+                fflabel.Text = "Know more about the aluminum can recycling!";
                 fflink.NavigateUrl = "canff.aspx";
                 break;
             case "chemical":
                 dsAccess.SelectCommand = "select * from chemical where SiteSuburb LIKE '%" + text + "%';";
 
                 infoimage.ImageUrl = "images/paint.png";
-                fflabel.Text = "Know more about the chemical&paint recycling!";
+                fflabel.Text = "Know more about the painting recycling!";
                 fflink.NavigateUrl = "chemicalff.aspx";
                 break;
             case "clothing":
                 dsAccess.SelectCommand = "select * from clothing where SiteSuburb LIKE '%" + text + "%';";
 
                 infoimage.ImageUrl = "images/clothe.png";
-                fflabel.Text = "Know more about the clothing recycling!";
+                fflabel.Text = "Know more about the clothing&textile recycling!";
                 fflink.NavigateUrl = "clothingff.aspx";
                 break;
             case "computer":
@@ -195,21 +195,21 @@
                 dsAccess.SelectCommand = "select * from mobilephone where SiteSuburb LIKE '%" + text + "%';";
 
                 infoimage.ImageUrl = "images/mobilephone.png";
-                fflabel.Text = "Know more about the mobilephone recycling!";
+                fflabel.Text = "Know more about the mobile phone recycling!";
                 fflink.NavigateUrl = "phoneff.aspx";
                 break;
             case "TV":
                 dsAccess.SelectCommand = "select * from tv where SiteSuburb LIKE '%" + text + "%';";
 
                 infoimage.ImageUrl = "images/tv.png";
-                fflabel.Text = "Know more about the tv recycling!";
+                fflabel.Text = "Know more about the television recycling!";
                 fflink.NavigateUrl = "tvff.aspx";
                 break;
             case "whitegood":
                 dsAccess.SelectCommand = "select * from whitegood where SiteSuburb LIKE '%" + text + "%';";
 
                 infoimage.ImageUrl = "images/whitegood.png";
-                fflabel.Text = "Know more about the whitegood recycling!";
+                fflabel.Text = "Know more about the white good recycling!";
                 fflink.NavigateUrl = "whitegoodff.aspx";
                 break;
             default:
@@ -275,7 +275,7 @@
 
 
         <!-- textbox area -->
-        <div style="display: inline-block; position: relative; top: 0; text-align: center; width: 1150px; height: 150px">
+        <div style="display: inline-block; position: relative; top: 0; text-align: center; width: 950px; height: 150px">
 
 
             <div style="display: inline-block; position: absolute; top: 0; left: 0; font-size: 47px; height: 150px; width: 300px; color: goldenrod">
@@ -285,16 +285,17 @@
             </div>
 
             <div style="display: inline-block; position: absolute; top: 0; left: 345px; height: 150px">
-                <asp:TextBox Style="display: block;" ID="TextBox1" runat="server" Font-Size="52px" Width="600px" Height="55px" Font-Bold="True" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black"></asp:TextBox>
-                <asp:DropDownList Style="display: block" ID="type" runat="server" Font-Size="50px" Width="600px" Height="55px" BackColor="#3FC367" Font-Bold="True">
-                    <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" Text="Clothing&Textile" />
-                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Chemical&Painting" />
-                    <asp:ListItem id="battery" runat="server" Value="battery" Text="Battery" />
-                    <asp:ListItem id="computer" runat="server" Value="computer" Text="Computer" />
-                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" Text="Mobile Phone" />
-                    <asp:ListItem id="TV" runat="server" Value="TV" Text="TV" />
-                    <asp:ListItem id="whitegood" runat="server" Value="whitegood" Text="White Good" />
-                    <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum can" />
+                <asp:TextBox Style="display: block;" ID="TextBox1" runat="server" Font-Size="45px" Width="480px" Height="55px" Font-Bold="True" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black"></asp:TextBox>
+                <asp:DropDownList Style="display: block" ID="type" runat="server" Font-Size="40px" Width="484px" Height="55px" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black" Font-Bold="True">
+                    <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" Text="Clothings&Textiles" />
+                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Paintings" />
+                    <asp:ListItem id="battery" runat="server" Value="battery" Text="Batteries" />
+                    <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum Cans" />
+                    <asp:ListItem id="computer" runat="server" Value="computer" Text="Computers" />
+                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" Text="Mobile Phones" />
+                    <asp:ListItem id="TV" runat="server" Value="TV" Text="Televisions" />
+                    <asp:ListItem id="whitegood" runat="server" Value="whitegood" Text="White Goods" />
+                    
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="va1" runat="server" Style="font-size: 2em" ErrorMessage="Please enter a postcode or a city." ControlToValidate="TextBox1" />
                 <%--<asp:RegularExpressionValidator ID="va2" runat="server" Style="font-size: 2em" ControlToValidate="TextBox1" ValidationExpression="\d\d\d\d"
@@ -307,8 +308,10 @@
                     OnServerValidate="CustomValidator1_ServerValidate">
         </asp:CustomValidator>
             </div>
-            <div style="display: inline-block; position: absolute; top: 0; right: 0; height: 150px">
-                <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="110" Width="150" Font-Size="45px" />
+            <div style="display: inline-block; position: absolute; top: 0; right: -50px; height: 150px">
+<%--                <asp:Button ID="Button1" runat="server" Text="Search" OnClick="find" Height="110" Width="150" Font-Size="45px" />--%>
+                            <asp:ImageButton ID="ImageButton1" ImageUrl="images/search.png" OnClick="find"  runat="server" Width="110px" />
+
             </div>
 
 
@@ -323,7 +326,8 @@
                 AutoGenerateColumns="false"
                 PageSize="4"
                 Font-Name="arial"
-                Font-Size="24pt"
+                Font-Size="20pt"
+                width="850px"
                 HeaderStyle-BackColor="#dcdcdc"
                 HeaderStyle-ForeColor="blue"
                 EmptyDataText="Sorry. It seems that we do not have data of your area now.">

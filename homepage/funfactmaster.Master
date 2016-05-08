@@ -3,47 +3,53 @@
 
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <div style="text-align: center; background-color: white; min-width: 1150px; font-size: 3em;">
-        Do you want to know more about the waste and tips of recycling them?
+    <div style="text-align: center; background-color: white; min-width: 1150px; font-size: 2.5em;">
+        Do you want to know more about the waste and tips of recycling?
         <br />
         Select one category to watch it and share it to your mum!
         <div style="display: inline-block; width: 1150px; position: relative; top: 0; left: 0; overflow: auto;">
 
 
-            <div style="width: 350px; font-size:0.8em; float:left">
-                <div style="width: 300px; height: 40px; text-align: center; background-color: #0066FF;text-decoration:none">
-                    <a href="clothingff.aspx">Clothing&Textile</a>
+            <div style="width: 350px; font-size: 32px; float: left">
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #CC99FF; text-decoration: none">
+                    <a href="clothingff.aspx">Clothings&Textiles</a>
                 </div>
-                <div style="width: 300px; height: 40px; text-align: center; background-color: #66ffff;text-decoration:none">
-                    <a href="chemicalff.aspx">Painting</a>
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #66ffff; text-decoration: none">
+                    <a href="chemicalff.aspx">Paintings</a>
 
                 </div>
-                <div style="width: 300px; height: 40px; text-align: center; background-color: #669999;text-decoration:none">
-                    <a href="batteryff.aspx">Battery</a>
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #669999; text-decoration: none">
+                    <a href="batteryff.aspx">Batteries</a>
 
                 </div>
-                <div style="width: 300px; height: 40px; text-align: center; background-color: #00ff00;text-decoration:none">
-                    <a href="canff.aspx">Aluminum can</a>
+                <div style="width: 300px; height: 40px; text-align: center; background-color: #00ff00; text-decoration: none">
+                    <a href="canff.aspx">Aluminum cans</a>
 
                 </div>
-                <div style="height: 40px; width: 300px; text-align: center; background-color: #FF6600;text-decoration:none">
-                    <a href="computerff.aspx">Computer</a>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: #FF6600; text-decoration: none">
+                    <a href="computerff.aspx">Computers</a>
 
                 </div>
-                <div style="height: 40px; width: 300px; text-align: center; background-color: yellow;text-decoration:none">
-                    <a href="phoneff.aspx">Mobile Phone</a>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: yellow; text-decoration: none">
+                    <a href="phoneff.aspx">Mobile Phones</a>
 
                 </div>
-                <div style="height: 40px; width: 300px; text-align: center; background-color: #00FFCC;text-decoration:none">
-                    <a href="tvff.aspx">Television</a>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: #00FFCC; text-decoration: none">
+                    <a href="tvff.aspx">Televisions</a>
 
                 </div>
-                <div style="height: 40px; width: 300px; text-align: center; background-color: #009900;text-decoration:none">
-                    <a href="whitegoodff.aspx">White Good</a>
+                <div style="height: 40px; width: 300px; text-align: center; background-color: #009900; text-decoration: none">
+                    <a href="whitegoodff.aspx">White Goods</a>
 
+                </div>
+                <!-- Featured -->
+                <div id="featured" style="text-align:center;width:300px">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
+                    </asp:HyperLink>
                 </div>
             </div>
-            <div style="width: 750px; float:right">
+            <div style="width: 750px; float: right">
                 <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
             </div>
 

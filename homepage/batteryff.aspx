@@ -12,15 +12,10 @@ Currently, less than 3% of all batteries purchased in Australia are recycled,
             It removes toxic and hazardous substances from landfill, particularly lead, 
             cadmium and mercury that may contaminate groundwater. Lithium metal batteries 
             can cause explosions or fires if inappropriately stored or disposed.
-<p style="color:gold">What happens to the batteries collected?</p>
+<p style="color:blue">What happens to the batteries collected?</p>
 After collection batteries are sorted by chemistry type. They are then sent on to the respective recyclers in Australia and overseas. Australia currently does not have the technology and services required to recycle rechargeable and single use batteries so they will be processed overseas by a company specialising in the recovery of nickel, cadmium, lithium, zinc and other precious resources to strict environmental standards.
 
         </div>
 
-    <!-- Featured -->
-    <div id="featured">
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">
-            <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" /></asp:HyperLink>
-    </div>
-        
+
 </asp:Content>

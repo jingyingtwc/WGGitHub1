@@ -9,18 +9,13 @@
         commercial recyclers, depending on their quality and quantity. Pre-consumer textiles can be sold for 
         use in manufacturing into smaller goods or donated to charities or craft stores.
         Fabrics represent a large investment in water, energy and raw materials. Reuse programs will have the largest environmental benefit.<br />
-        <p style="color:gold">Clothes</p>
+        <p style="color:blue">Clothes</p>
         
         Reusing and recycling clothing saves natural resources, reduces pollution and waste, and helps people in need - or even those just looking for funky threads.<br />
-        <p style="color:gold">Leather</p>
+        <p style="color:blue">Leather</p>
         The leather tanning processes involves large amounts of water and chemicals to produce workable, durable leather. By recycling or reusing leather scrap and off cuts this diverts usable materials from landfill and reduces the demand for virgin leather production.
 
     </div>
-    <!-- Featured -->
-    <div id="featured">
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">
-            <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" />
-        </asp:HyperLink>
-    </div>
+
 
 </asp:Content>

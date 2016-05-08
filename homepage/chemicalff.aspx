@@ -19,10 +19,5 @@
 
         </div>
 
-    <!-- Featured -->
-    <div id="featured">
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">
-            <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" /></asp:HyperLink>
-    </div>
-        
+
 </asp:Content>

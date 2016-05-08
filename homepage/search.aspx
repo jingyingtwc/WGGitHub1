@@ -176,7 +176,7 @@
     <!-- body area -->
     <div style="text-align: center; position: center; min-width: 1150px">
         <div>
-            <p style="font-size: 3em">Enter your postcode and find the rubbish pick up date!</p>
+            <p style="font-size: 3em">Enter your postcode and find the rubbish pick up days!</p>
             <p style="font-size: 3em">And don't forget to remind your mum before that day!</p>
         </div>
         <!-- search text button etc -->
@@ -230,7 +230,7 @@
                                 SortExpression="Suburbs" />
                             <asp:BoundField DataField="Postcode" HeaderText="Your postcode:"
                                 SortExpression="Postcode" />
-                            <asp:BoundField DataField="Date" HeaderText="Collection date:"
+                            <asp:BoundField DataField="Date" HeaderText="Collection day:"
                                 SortExpression="Date" />
 
                         </Columns>
