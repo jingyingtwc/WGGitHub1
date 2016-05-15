@@ -55,6 +55,8 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="404.htm" />
     <Content Include="aboutus.aspx" />
     <Content Include="batteryff.aspx" />
     <Content Include="canff.aspx" />
@@ -78,6 +80,10 @@
     <Content Include="whitegoodff.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="batteryff.aspx.cs">
       <DependentUpon>batteryff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
