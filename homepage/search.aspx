@@ -176,21 +176,23 @@
     <!-- body area -->
     <div style="text-align: center; position: center; min-width: 1150px">
         <div>
-            <p style="font-size: 3em">Enter your postcode and find the rubbish pick up days!</p>
-            <p style="font-size: 3em">And don't forget to remind your mum before that day!</p>
+            <p style="font-size: 47px">Enter your postcode and find the rubbish pick up days!</p>
+            <p style="font-size: 47px">And don't forget to remind your mum before that day!</p>
         </div>
         <!-- search text button etc -->
-        <div style="display: inline-block; position: relative; top: 10px; width: 1150px">
+        <div style="display: inline-block; position: relative; top: 0px; width: 1150px">
 
-            <div style="font-size: 3em; position: absolute; top: 0; left: 0; color: goldenrod">
+            <div style="font-size: 3em; position: absolute; top: 0; left: 100px; color: goldenrod">
                 Your postcode
                 <br />
                 or city:
             </div>
-            <div style="position: absolute; top: 0; right: 0">
-                <asp:TextBox ID="TextBox1" runat="server" Width="800" Height="120" BackColor="#3FC367" Font-Size="90pt" Font-Bold="True" Font-Italic="False" BorderColor="Black" BorderWidth="2px"></asp:TextBox><br />
+            <div style="position: absolute; top: 0; left:320px">
+                <asp:TextBox ID="TextBox1" runat="server" Width="480" Height="110" BackColor="#3FC367" Font-Size="90pt" Font-Bold="True" Font-Italic="False" BorderColor="Black" BorderWidth="2px"></asp:TextBox><br />
                 <asp:RequiredFieldValidator ID="va1" runat="server" Style="font-size: 2em" ErrorMessage="Please enter a postcode or a city." ControlToValidate="TextBox1" />
                 <%--<asp:RegularExpressionValidator ID="va2" runat="server" style="font-size:2em" ControlToValidate="TextBox1" ValidationExpression="\d\d\d\d" ErrorMessage="Please enter a valid postcode" Display="Dynamic" />--%>
+                <div style="position:absolute;top:0;right:-55px">
+                <asp:ImageButton ID="ImageButton1" ImageUrl="images/search.png" OnClick="find" runat="server" ToolTip="Search!" Width="110px" /></div>
                 <asp:CustomValidator
                     ID="validator"
                     runat="server"
@@ -249,15 +251,14 @@
 
 
         <!-- lowerpart buttons -->
-        <div style="text-align: center; margin: auto; width: 900px;position: relative; top: 0; left: 0;">
+        <div style="text-align: center; margin: auto; width: 900px;height:200px;position: relative; top: 0; left: 0;">
             <div style="position:absolute;top:33px;left:0">
                 <a href="index.aspx" title="Back to homepage">
                     <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" /></a>
             </div>
-            <div style="display:inline">
-                <asp:Image ID="Image3" runat="server" ImageUrl="images/bin.png" Height="190px" />
-            </div >           <div style="position:absolute;top:13px;right:0">
-                <asp:ImageButton ID="ImageButton1" ImageUrl="images/search.png" OnClick="find" runat="server" ToolTip="Search!" /></div>
+            <div style="position:absolute;top:33px;right:200px">
+                <asp:Image ID="Image3" runat="server" ImageUrl="images/bin.png" Height="180px" />
+            </div >           
         </div>
     </div>
 </asp:Content>

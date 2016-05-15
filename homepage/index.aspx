@@ -5,7 +5,7 @@
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
-    <div style="position: relative; width: 99.9vw; height: 50.4vw;padding:0;margin:0;max-width:1903px">
+    <div style="position: relative; width: 98vw; height: 50.4vw;padding:0;margin:0;max-width:1903px">
 
         <!-- bg image-->
         <div style="width: 100%; height: 100%; margin-left: 0; margin-right: 0;max-width:1903px">

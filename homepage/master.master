@@ -32,7 +32,7 @@
     <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-    <div style="width:99.9vw; position: relative; top: 0; text-align: center; padding: 0; margin: 0;min-height:100%;max-width:1903px">
+    <div style="width:98.8vw; position: relative; top: 0; text-align: center; padding: 0; margin: 0;min-height:100%;max-width:1903px">
         <form id="form1" method="post" runat="server">
 
             <!-- top banner-->
@@ -46,7 +46,9 @@
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">Game　</asp:HyperLink>
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">Collection Days　</asp:HyperLink>
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">Disposal Sites　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">Recycling Facts</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">Recycling Facts　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink6" runat="server" NavigateUrl="~/aboutus.aspx">About Us　</asp:HyperLink>
+
                 </div>
             </div>
             <!-- top banner end-->
