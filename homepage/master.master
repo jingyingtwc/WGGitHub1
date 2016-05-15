@@ -29,23 +29,24 @@
     height: 100%;
 }
     </style>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-    <div style="width:99vw; position: relative; top: 0; text-align: center; padding: 0; margin: 0;min-height:100%">
+    <div style="width:99.9vw; position: relative; top: 0; text-align: center; padding: 0; margin: 0;min-height:100%;max-width:1903px">
         <form id="form1" method="post" runat="server">
 
             <!-- top banner-->
-            <div id="banner" style="position: relative; background-color: #3FC367; height: 50px; padding: 0; margin: 0;min-width:1150px">
+            <div id="banner" style="position: relative; background-color: #3FC367; height: 40px; padding: 0; margin: 0;min-width:1150px">
                 <div style="vertical-align: central; text-align: left; position: relative; top: 0px; left: 0px">
-                    <a href="index.aspx"><img alt="WasteGuru" src="images/logo2.png" style="height: 50px" /></a>
+                    <a href="index.aspx"><img alt="WasteGuru" src="images/logo2.png" style="height: 40px" /></a>
                 </div>
 
-                <div style="padding: 0; margin: 0; vertical-align: middle; position: absolute; top:0px; right:0px; font-size: 32px;z-index:1">
+                <div style="padding: 0; margin: 0; vertical-align: middle; position: absolute; top:0px; right:0px; font-size: 25px;z-index:1">
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Home　</asp:HyperLink>
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">Game　</asp:HyperLink>
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">Collection Days　</asp:HyperLink>
                     <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">Disposal Sites　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">Recycling Fact</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">Recycling Facts</asp:HyperLink>
                 </div>
             </div>
             <!-- top banner end-->

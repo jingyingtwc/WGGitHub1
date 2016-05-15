@@ -9,12 +9,13 @@
             Paint contains chemicals such as solvents and metals that can contaminate our groundwater and endanger 
             human health. It is important to not put these items into your garbage bin. By recycling your paint 
             you can play an important role in protecting our environment.<br/>
-*  Use up left over paint, or give it to a friend to use.<br/>
-*  Read the labels for safety instructions.<br/>
-*  Never mix paint with any other liquid or solid substance, other than as directed on the label.<br/>
-*  Never put liquid paint in the garbage bin and never pour it down the drain.<br/>
-*  Store leftover paint in the original container with the label intact.<br/>
-*  Store paint away from extreme temperatures.<br/>
+            <p style="color:blue;font-size:larger">Recycling Tips</p>
+•  Use up left over paint, or give it to a friend to use.<br/>
+•  Read the labels for safety instructions.<br/>
+•  Never mix paint with any other liquid or solid substance, other than as directed on the label.<br/>
+•  Never put liquid paint in the garbage bin and never pour it down the drain.<br/>
+•  Store leftover paint in the original container with the label intact.<br/>
+•  Store paint away from extreme temperatures.<br/>
 
 
         </div>

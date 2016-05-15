@@ -279,16 +279,16 @@
 
 
             <div style="display: inline-block; position: absolute; top: 0; left: 0; font-size: 47px; height: 150px; width: 300px; color: goldenrod">
-                Your postcode
+                Your location:
                 <br />
-                or city:
+                Category:
             </div>
 
             <div style="display: inline-block; position: absolute; top: 0; left: 345px; height: 150px">
                 <asp:TextBox Style="display: block;" ID="TextBox1" runat="server" Font-Size="45px" Width="480px" Height="55px" Font-Bold="True" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black"></asp:TextBox>
                 <asp:DropDownList Style="display: block" ID="type" runat="server" Font-Size="40px" Width="484px" Height="55px" BackColor="#3FC367" BorderWidth="2px" BorderColor="Black" Font-Bold="True">
-                    <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" Text="Clothings&Textiles" />
-                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Paintings" />
+                    <asp:ListItem id="clothing" runat="server" Selected="True" Value="clothing" Text="Clothing and Textiles" />
+                    <asp:ListItem id="chemical" runat="server" Value="chemical" Text="Paint" />
                     <asp:ListItem id="battery" runat="server" Value="battery" Text="Batteries" />
                     <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum Cans" />
                     <asp:ListItem id="computer" runat="server" Value="computer" Text="Computers" />
@@ -317,7 +317,7 @@
 
 
         </div>
-
+        <br/>
         <div style="display: inline-block">
             <asp:Label runat="server" ID="emprylabel" Visible="false" />
             <asp:GridView ID="datagv" runat="server"
@@ -330,7 +330,8 @@
                 width="850px"
                 HeaderStyle-BackColor="#dcdcdc"
                 HeaderStyle-ForeColor="blue"
-                EmptyDataText="Sorry. It seems that we do not have data of your area now.">
+                GridLines="None"
+                EmptyDataText="Sorry. It seems that we do not have data of your area now." BorderColor="White" BorderStyle="None" BorderWidth="0px" CellPadding="0">
 
 
                 <Columns>
@@ -343,6 +344,12 @@
                     <asp:BoundField DataField="Postcode" HeaderText="Postcode"
                         SortExpression="Postcode" />
                 </Columns>
+
+                <EditRowStyle BorderStyle="None" />
+
+<HeaderStyle BackColor="Gainsboro" ForeColor="Blue" BorderColor="White" BorderStyle="None" BorderWidth="0px"></HeaderStyle>
+                <RowStyle BorderColor="White" BorderStyle="None" BorderWidth="0px" />
+                <SelectedRowStyle BorderWidth="0px" />
 
             </asp:GridView>
             <br />
@@ -372,16 +379,4 @@
                                 <asp:Image ID="Image2" runat="server" ImageUrl="images/lion.png" /></td>
                         </tr>
                     </table>
-                </asp:HyperLink>
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-</asp:Content>
-
-
-
+                </asp:HyperLink></div></div></div></asp:Content>

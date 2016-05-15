@@ -111,8 +111,8 @@
         disposal.SelectCommand = "SELECT * FROM collection WHERE Postcode LIKE '%" + TextBox1.Text.Trim(' ') + "%'";
         gvProducts.DataSource = disposal;
         gvProducts.DataBind();
-        
-        
+
+
     }
 
 
@@ -135,7 +135,7 @@
 
 
         string text = TextBox1.Text.Trim(' ');
-        if (text == "") 
+        if (text == "")
         { }
         else
         {
@@ -188,8 +188,8 @@
                 or city:
             </div>
             <div style="position: absolute; top: 0; right: 0">
-                <asp:TextBox ID="TextBox1" runat="server" Width="800" Height="120" BackColor="#3FC367" Font-Size="90pt" Font-Bold="True" Font-Italic="False" BorderColor="Black" BorderWidth="2px"></asp:TextBox><br/>
-                <asp:RequiredFieldValidator ID="va1" runat="server" style="font-size:2em" ErrorMessage="Please enter a postcode or a city." ControlToValidate="TextBox1" />
+                <asp:TextBox ID="TextBox1" runat="server" Width="800" Height="120" BackColor="#3FC367" Font-Size="90pt" Font-Bold="True" Font-Italic="False" BorderColor="Black" BorderWidth="2px"></asp:TextBox><br />
+                <asp:RequiredFieldValidator ID="va1" runat="server" Style="font-size: 2em" ErrorMessage="Please enter a postcode or a city." ControlToValidate="TextBox1" />
                 <%--<asp:RegularExpressionValidator ID="va2" runat="server" style="font-size:2em" ControlToValidate="TextBox1" ValidationExpression="\d\d\d\d" ErrorMessage="Please enter a valid postcode" Display="Dynamic" />--%>
                 <asp:CustomValidator
                     ID="validator"
@@ -197,7 +197,7 @@
                     ControlToValidate="TextBox1"
                     Text="Please enter a valid postcode or city."
                     OnServerValidate="CustomValidator1_ServerValidate">
-        </asp:CustomValidator>
+                </asp:CustomValidator>
             </div>
 
             <!-- data table -->
@@ -219,10 +219,12 @@
                         AutoGenerateColumns="false"
                         PageSize="4"
                         Font-Name="arial"
-                        Font-Size="24pt"
+                        Font-Size="20pt"
+                        Width="850px"
                         HeaderStyle-BackColor="#dcdcdc"
                         HeaderStyle-ForeColor="blue"
-                        EmptyDataText="Sorry. It seems that we do not have data of your area now.">
+                        GridLines="None"
+                        EmptyDataText="Sorry. It seems that we do not have data of your area now." BorderColor="White" BorderStyle="None" BorderWidth="0px" CellPadding="0">
 
 
                         <Columns>
@@ -247,10 +249,15 @@
 
 
         <!-- lowerpart buttons -->
-        <div style="text-align:justify;text-align-last:justify; margin: auto; width: 1050px">
-            <a href="index.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" /></a>
-            <asp:Image ID="Image3" runat="server" ImageUrl="images/bin.png" Height="190px" />
-            <asp:ImageButton ID="ImageButton1" ImageUrl="images/search.png" OnClick="find" runat="server" />
+        <div style="text-align: center; margin: auto; width: 900px;position: relative; top: 0; left: 0;">
+            <div style="position:absolute;top:33px;left:0">
+                <a href="index.aspx" title="Back to homepage">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="images/back.png" /></a>
+            </div>
+            <div style="display:inline">
+                <asp:Image ID="Image3" runat="server" ImageUrl="images/bin.png" Height="190px" />
+            </div >           <div style="position:absolute;top:13px;right:0">
+                <asp:ImageButton ID="ImageButton1" ImageUrl="images/search.png" OnClick="find" runat="server" ToolTip="Search!" /></div>
         </div>
     </div>
 </asp:Content>

@@ -9,7 +9,7 @@
         Mobile phones and their batteries contain toxic heavy metals and are not safe to be sent 
         to landfill. It is important to take your old mobile phones and their batteries to an 
         appropriate collection point, and not place them in your garbage or recycling bins at home or work.
-        <p style="color:blue">What else can I do with my old mobile phones?</p>
+        <p style="color:blue;font-size:larger">What else can I do with my old mobile phones?</p>
         Recycling mobile phones and their components is easy by dropping them off 
         at a retailer which participates in a mobile phone recycling program. 
         The next time you buy a new phone, check to see if you can leave your 
