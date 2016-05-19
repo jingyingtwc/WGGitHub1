@@ -292,7 +292,7 @@
                     <asp:ListItem id="battery" runat="server" Value="battery" Text="Batteries" />
                     <asp:ListItem id="can" runat="server" Value="can" Text="Aluminum Cans" />
                     <asp:ListItem id="computer" runat="server" Value="computer" Text="Computers" />
-                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" Text="Mobile Phones" />
+                    <asp:ListItem id="mobilephone" runat="server" Value="mobilephone" Text="Phones and Tablets" />
                     <asp:ListItem id="TV" runat="server" Value="TV" Text="Televisions" />
                     <asp:ListItem id="whitegood" runat="server" Value="whitegood" Text="White Goods" />
                     
