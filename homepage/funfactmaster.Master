@@ -6,40 +6,40 @@
     <div style="text-align: center; background-color: white; min-width: 1150px; font-size: 2.5em;">
         Do you want to know more about the waste and tips of recycling?
         <br />
-        Select one category to read it and share it to your mum!
+        Select a category to read it and share it with your mum!
         <div style="display: inline-block; width: 1150px; position: relative; top: 10px; left: 0; overflow: auto;">
 
 
             <div style="width: 350px; font-size: 32px; float: left">
                 <div style="width: 300px; height: 40px; text-align: center; background-color: #CC99FF; text-decoration: none">
-                    <a href="clothingff.aspx">Clothings&Textiles</a>
+                    <a style="color:black" href="clothingff.aspx">Clothing and Textiles</a>
                 </div>
                 <div style="width: 300px; height: 40px; text-align: center; background-color: #66ffff; text-decoration: none">
-                    <a href="chemicalff.aspx">Paints</a>
+                    <a style="color:black" href="chemicalff.aspx">Paint</a>
 
                 </div>
                 <div style="width: 300px; height: 40px; text-align: center; background-color: #669999; text-decoration: none">
-                    <a href="batteryff.aspx">Batteries</a>
+                    <a style="color:black"  href="batteryff.aspx">Batteries</a>
 
                 </div>
                 <div style="width: 300px; height: 40px; text-align: center; background-color: #00ff00; text-decoration: none">
-                    <a href="canff.aspx">Aluminum Cans</a>
+                    <a style="color:black"  href="canff.aspx">Aluminum Cans</a>
 
                 </div>
                 <div style="height: 40px; width: 300px; text-align: center; background-color: #FF6600; text-decoration: none">
-                    <a href="computerff.aspx">Computers</a>
+                    <a style="color:black"  href="computerff.aspx">Computers</a>
 
                 </div>
                 <div style="height: 40px; width: 300px; text-align: center; background-color: yellow; text-decoration: none">
-                    <a href="phoneff.aspx">Mobile Phones</a>
+                    <a style="color:black"  href="phoneff.aspx">Mobile Phones</a>
 
                 </div>
                 <div style="height: 40px; width: 300px; text-align: center; background-color: #00FFCC; text-decoration: none">
-                    <a href="tvff.aspx">Televisions</a>
+                    <a style="color:black"  href="tvff.aspx">Televisions</a>
 
                 </div>
                 <div style="height: 40px; width: 300px; text-align: center; background-color: #009900; text-decoration: none">
-                    <a href="whitegoodff.aspx">White Goods</a>
+                    <a style="color:black"  href="whitegoodff.aspx">White Goods</a>
 
                 </div>
                 <!-- Featured -->

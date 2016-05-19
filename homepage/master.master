@@ -41,13 +41,13 @@
                     <a href="index.aspx"><img alt="WasteGuru" src="images/logo2.png" style="height: 40px" /></a>
                 </div>
 
-                <div style="padding: 0; margin: 0; vertical-align: middle; position: absolute; top:0px; right:0px; font-size: 25px;z-index:1">
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Home　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">Game　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">Collection Days　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">Disposal Sites　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">Recycling Facts　</asp:HyperLink>
-                    <asp:HyperLink class="link" Style="text-decoration: none" ID="HyperLink6" runat="server" NavigateUrl="~/aboutus.aspx">About Us　</asp:HyperLink>
+                <div style="padding: 0; margin: 0; vertical-align: middle; position: absolute; top:0px; right:0px; font-size: 25px;z-index:1;">
+                    <asp:HyperLink class="link" Style="text-decoration: none;color:white" ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Home　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none;color:white" ID="HyperLink2" runat="server" NavigateUrl="~/game.aspx">Game　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none;color:white" ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">Collection Days　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none;color:white" ID="HyperLink4" runat="server" NavigateUrl="~/disposal.aspx">Disposal Sites　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none;color:white" ID="HyperLink5" runat="server" NavigateUrl="~/clothingff.aspx">Recycling Facts　</asp:HyperLink>
+                    <asp:HyperLink class="link" Style="text-decoration: none;color:white" ID="HyperLink6" runat="server" NavigateUrl="~/aboutus.aspx">About Us　</asp:HyperLink>
 
                 </div>
             </div>
