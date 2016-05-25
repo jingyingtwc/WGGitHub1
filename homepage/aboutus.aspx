@@ -16,7 +16,7 @@
                     The website is designed by ASYST, an IT team from IT faculty of Monash University. The team consists of 4 students who are in their final master semester. The team members come from different countries and have various backgrounds and skills. 
                 </p>
                 <p>
-                    If you have any ideas or suggestion, please feel free and contact us at anytime. Our email address is klu19@student.moansh.edu 
+                    If you have any ideas or suggestion, please feel free and contact us at anytime. Our email address is monashwasteguru@gmail.com 
                 </p>
 
             </div>

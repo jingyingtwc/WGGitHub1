@@ -64,6 +64,7 @@
     <Content Include="clothingff.aspx" />
     <Content Include="computerff.aspx" />
     <Content Include="disposal.aspx" />
+    <Content Include="Email.aspx" />
     <Content Include="funfact.aspx" />
     <Content Include="game.aspx" />
     <Content Include="gameinst.aspx" />
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="computerff.aspx.designer.cs">
       <DependentUpon>computerff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.aspx.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Email.aspx.designer.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
     </Compile>
     <Compile Include="funfactmaster.Master.cs">
       <DependentUpon>funfactmaster.Master</DependentUpon>
